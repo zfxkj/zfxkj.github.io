@@ -37,7 +37,7 @@ zhihu_username:
 weibo_username:     
 facebook_username:
 github_username:    ZFX521
-google_username:
+google_username:    
 email: 2675699284@qq.com
 linkedin:
 
@@ -45,7 +45,7 @@ linkedin:
 anchorjs: true
 
 # page Sidebar settings
-sidebar-about-description: "在代码的道路上渐行渐远"
+sidebar-about-description: "ZFX 学习笔记"
 sidebar-avatar: /img/me2.jpg
 
 # Friends
