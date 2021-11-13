@@ -3,8 +3,8 @@ layout: post
 title: 初学者的Git
 subtitle: "Git的一些简单而且常用的操作"
 category : [Git]
-tags : [Git,GitHub]
-date:       2017-05-11
+tags : [Git,GitHub,Gitee]
+date:       2021-11-13
 author:     "晨曦"
 header-img: "/img/post/git-bg.jpg"
 description:  "本文主要介绍一些简单的命令：包括clone, add, commit, push, pull, branch等"
@@ -143,3 +143,6 @@ cat ~/.ssh/id_rsa.pub
 * 输入`git push -u origin master`（`master`为刚才查看的分支名）  
 
   等待完成后，再进入网页查看就已经更新了
+
+### 转载说明
+本文章转载自[晨曦的博客](https://blog.whuzfb.cn)，非原创！！！
