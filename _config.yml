@@ -1,11 +1,11 @@
-title: ZFB
-SEOTitle: ZFB 博客
-author: 晨曦
+title: 学习笔记
+SEOTitle: ZFX
+author: 小张
 timezone: Asia/Shanghai
 paginate: 10
 paginate_path: "page:num"
 highlighter: rouge
-url: "https://blog.whuzfb.cn"
+url: "https://www.zfx521.top"
 baseurl: ""
 markdown: kramdown
 kramdown:
@@ -13,8 +13,8 @@ kramdown:
 
 gems: [jekyll-paginate, jekyll-sitemap, jekyll-feed]
 
-disqus: zfb132
-disqus_base: http://blog.whuzfb.cn/
+disqus: zfx521
+disqus_base: http://www.zfx251.top/
 
 # https://developers.google.com/analytics/devguides/collection/analyticsjs/
 google_analytics_id: UA-97824262-2
@@ -33,12 +33,12 @@ about_path: about
 
 BASE_PATH:
 
-zhihu_username: zfb-chenxi
-weibo_username:     zfb132
+zhihu_username: 
+weibo_username:     
 facebook_username:
-github_username:    zfb132
+github_username:    ZFX521
 google_username:
-email: admin@whuzfb.cn
+email: 2675699284@qq.com
 linkedin:
 
 #  default.html footer
@@ -51,27 +51,7 @@ sidebar-avatar: /img/me2.jpg
 # Friends
 friends: [
   {
-    title: "CSDN",
-    href: "https://blog.csdn.net/qq_32507255/"
-  },
-  {
-    title: "博客园",
-    href: "https://www.cnblogs.com/zfb132/"
-  },
-  {
-    title: "简书",
-    href: "https://www.jianshu.com/u/8ee7e271d4f5/"
-  },
-  {
-    title: "OSCHINA",
-    href: "https://my.oschina.net/zfb132"
-  },
-  {
     title: "GitHub下载加速",
     href: "https://ghapi.zfb132.workers.dev/"
-  },
-  {
-    title: "brucezhaor",
-    href: "https://github.com/BruceZhaoR"
   }
 ]
