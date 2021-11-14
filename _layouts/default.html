@@ -35,6 +35,8 @@
   ga('send', 'pageview');
 
 </script>
+<!-- music↓-->
+<link rel="stylesheet" href="https://zfx521.gitee.io/css/player.css">
 </head>
 
 <body ontouchstart="">
@@ -184,5 +186,51 @@
     s.parentNode.insertBefore(bp, s);
 })();
 </script>
+<!--music下-->
+<div id="QPlayer">
+  <div id="pContent">
+    <div id="player">
+      <span class="cover"></span>
+      <div class="ctrl">
+        <div class="musicTag marquee">
+           <strong></strong>
+           <span></span>
+          <span class="artist"></span>
+        </div>
+        <div class="progress">
+          <div class="timer left"></div>
+          <div class="contr">
+            <div class="rewind icon"></div>
+            <div class="playback icon"></div>
+            <div class="fastforward icon"></div>
+          </div>
+          <div class="right">
+            <div class="liebiao icon"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ssBtn">
+            <div class="adf"></div>
+      </div>
+  </div>
+  <ol id="playlist"></ol>
+  </div>
+  
+  <script src="https://zfx521.gitee.io/js/jquery.min.js"></script>
+  <script src="https://zfx521.gitee.io/js/jquery.marquee.min.js"></script>
+  
+  <script src="https://zfx521.gitee.io/js/music.js"></script>
+  <script src="https://zfx521.gitee.io/js/player.js"></script>
+  <script>
+  
+  function bgChange(){
+    var lis= $('.lib');
+    for(var i=0; i<lis.length; i+=2)
+    lis[i].style.background = 'rgba(246, 246, 246, 0.5)';
+  }
+  window.onload = bgChange;
+  </script>
+<!--music上-->
 </body>
 </html>
