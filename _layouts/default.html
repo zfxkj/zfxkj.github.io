@@ -78,7 +78,39 @@
 				<p class="copyright text-muted">
           <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
           </script>
-		<span class="label label-primary label-md"><strong>转载请标明作者和出处</strong></span><br>© 2021 | 访问量：<span id="busuanzi_container_site_pv"><span id="busuanzi_value_site_pv"></span></span> | 备案号：待填写
+    <script>  
+      //这里代码多了几行，但是不会延迟显示，速度比较好，格式可以自定义，是理想的时间显示
+      setInterval("fun(show_time)",1);
+      function fun(timeID){ 
+      var date = new Date();  //创建对象  
+      var y = date.getFullYear();     //获取年份  
+      var m =date.getMonth()+1;   //获取月份  返回0-11  
+      var d = date.getDate(); // 获取日  
+      var w = date.getDay();   //获取星期几  返回0-6   (0=星期天) 
+      var ww = ' 星期'+'日一二三四五六'.charAt(new Date().getDay()) ;//星期几
+      var h = date.getHours();  //时
+      var minute = date.getMinutes()  //分
+      var s = date.getSeconds(); //秒
+      if(m<10){
+      m = "0"+m;
+      }
+      if(d<10){
+      d = "0"+d;
+      }
+      if(h<10){
+      h = "0"+h;
+      }
+      if(minute<10){
+      minute = "0"+minute;
+      }
+      if(s<10){
+      s = "0"+s;
+      }
+      document.getElementById(timeID.id).innerHTML =  y+"-"+m+"-"+d+"   "+h+":"+minute+":"+s+"  "+ww;
+      //document.write(y+"-"+m+"-"+d+"   "+h+":"+minute+":"+s);  
+        }
+      </script>
+		<span class="label label-primary label-md"><strong>转载请标明作者和出处</strong></span><br>© 2021 | 访问量：<span id="busuanzi_container_site_pv"><span id="busuanzi_value_site_pv"></span></span> | <div id="show_time"></div> | 备案号：待填写
                 </p>
             </div>
         </div>
