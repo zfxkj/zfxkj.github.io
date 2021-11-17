@@ -42,4 +42,4 @@ User-agent: psbot
 Disallow: 
 User-agent: *
 Disallow: 
-Sitemap: https://blog.whuzfb.cn/sitemap.xml
+Sitemap: https://www.zfx521.top/sitemap.xml
