@@ -206,7 +206,7 @@ index.html
 </body>
 </html>
 ```
-app. py
+app.py
 ```python
 from flask import Flask, request,  redirect, render_template,session
 from sql import *
@@ -232,7 +232,7 @@ def index():
 if __name__ == "__main__":
     app.run(host='0.0.0.0',debug=True)
 ```
-bzm. py
+bzm.py
 ```python
 import requests, json, sys, time, os
 
