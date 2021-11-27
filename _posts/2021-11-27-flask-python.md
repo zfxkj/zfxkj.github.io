@@ -225,7 +225,7 @@ def index():
         kip = request.args.get('kip')
     else:
         kip = 0
-    ex = start(ym,kip,qs)
+    ex = start(ym,kip)
     ymk = "当前页面：" + str(kip)
     return render_template('index.html',user=user_info,list_jpg=ex,ymk=ymk)
 
