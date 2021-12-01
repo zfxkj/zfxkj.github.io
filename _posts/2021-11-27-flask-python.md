@@ -6,7 +6,7 @@ category : [Python]
 tags : [Python,flask]
 date:       2021-11-27
 author:     "小张"
-header-img: "/img/post/python-str.jpg"
+header-img: "/img/post/python.jpg"
 description:  "用flask框架搭建一个简单的网页。"
 ---
 
