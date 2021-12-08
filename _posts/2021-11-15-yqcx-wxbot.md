@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 疫情查询使用教程
+title: 新冠疫情查询使用教程
 subtitle: "查询全国各地疫情"
 category : [wxbot]
 tags : [wxbot,疫情查询]

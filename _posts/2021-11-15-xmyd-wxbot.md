@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 小米运动使用教程
+title: 小米运动刷步数
 subtitle: "用小米运动实现微信、支付宝、QQ刷步数"
 category : [wxbot]
 tags : [wxbot,小米运动]
