@@ -91,7 +91,7 @@
     <script>  
       //这里代码多了几行，但是不会延迟显示，速度比较好，格式可以自定义，是理想的时间显示
       //实时时间的显示<span id="show_time"></span>
-      setInterval("fun(show_time)",1);
+      setInterval("fun(show_time)",100);
       function fun(timeID){ 
       var date = new Date();  //创建对象  
       var y = date.getFullYear();     //获取年份  
@@ -122,7 +122,7 @@
         }
       </script>
       <script>
-        setInterval("yeara(show_year)",100);
+        setInterval("yeara(show_year)",10000);
         function yeara(timeyear){ 
           var d1ate = new Date();  //创建对象  
           var year = d1ate.getFullYear();     //获取年份  
