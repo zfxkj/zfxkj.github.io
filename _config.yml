@@ -55,5 +55,13 @@ friends: [
   {
     title: "GitHub下载加速",
     href: "https://ghapi.zfb132.workers.dev/"
+  },
+  {
+    title: "ZFX工具",
+    href: "https://zfx521.gitee.io/"
+  },
+  {
+    title: "常用API",
+    href: "http://lkaa.top/"
   }
 ]
