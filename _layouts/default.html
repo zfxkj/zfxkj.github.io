@@ -122,8 +122,8 @@
         }
       </script>
       <script>
-        setInterval("fun(show_year)",1);
-        function fun(timeyear){ 
+        setInterval("yeara(show_year)",100);
+        function yeara(timeyear){ 
           var d1ate = new Date();  //创建对象  
           var year = d1ate.getFullYear();     //获取年份  
           document.getElementById(timeyear.id).innerHTML =  "@2021-"+year;
