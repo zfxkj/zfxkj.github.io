@@ -50,6 +50,9 @@ anchorjs: true
 sidebar-about-description: "ZFX 学习笔记"
 sidebar-avatar: /img/me2.jpg
 
+#备案号
+bah: "豫ICP备2021032942号"
+
 # Friends
 friends: [
   {
