@@ -91,7 +91,24 @@ a img:hover,a img:focus {
 }
 
 article {
-  overflow-x: hidden
+  overflow-x: hidden;
+  background: linear-gradient(125deg, #2c3e50, #27ae60, #2980b9, #e74c3c, #8e44ad);
+  background-size: 400%;
+  animation: bganimation 10s linear infinite
+}
+
+@keyframes bganimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 blockquote {
@@ -596,7 +613,10 @@ pre code {
 
 footer {
   font-size: 20px;
-  padding: 50px 0 65px
+  padding: 50px 0 65px;
+  background: linear-gradient(125deg, #2c3e50, #27ae60, #2980b9, #e74c3c, #8e44ad);
+  background-size: 400%;
+  animation: bganimation 10s linear infinite
 }
 
 footer .list-inline {
