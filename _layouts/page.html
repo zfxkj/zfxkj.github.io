@@ -90,7 +90,20 @@ layout: default
 								</a>
 							</li>
 							{% endif %}
-
+                            {% if site.qq %}
+							<li>
+								<a target="_blank" href="https://wpa.qq.com/msgrd?v=3&uin={{ site.qq }}&site=qq&menu=yes">
+									<i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+								</a>
+							</li>
+							{% endif %}
+                            {% if site.gitee_username %}
+							<li>
+								<a target="_blank" href="https://gitee.com/{{ site.gitee_username }}">
+									<i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+								</a>
+							</li>
+							{% endif %}
                         </ul>
                     </div>
                 </section>
