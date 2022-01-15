@@ -106,19 +106,21 @@
         setInterval("timeing(show_yxts)",100);
         function timeing(show_yxts){ 
           // 初始时间，月/日/年 时:分:秒
-          X = new Date("11/14/2021 11:50:00");
-          Y = new Date();
-          T = (Y.getTime()-X.getTime());
-          M = 24*60*60*1000;
-          a = T/M;
-          A = Math.floor(a);
-          b = (a-A)*24;
-          B = Math.floor(b);
-          c = (b-B)*60;
-          C = Math.floor((b-B)*60);
-          D = Math.floor((c-C)*60);
+          BirthDay=new Date("10-13-2021 08:24:10");//建站日期
+          today=new Date();
+          timeold=(today.getTime()-BirthDay.getTime());
+          sectimeold=timeold/1000
+          secondsold=Math.floor(sectimeold);
+          msPerDay=24*60*60*1000
+          e_daysold=timeold/msPerDay
+          daysold=Math.floor(e_daysold);
+          e_hrsold=(daysold-e_daysold)*-24;
+          hrsold=Math.floor(e_hrsold);
+          e_minsold=(hrsold-e_hrsold)*-60;
+          minsold=Math.floor((hrsold-e_hrsold)*-60);
+          seconds=Math.floor((minsold-e_minsold)*-60);
           //信息写入到DIV中 
-          document.getElementById(show_yxts.id).innerHTML = "本站已运行: "+A+"天"+B+"小时"+C+"分"+D+"秒";
+          document.getElementById(show_yxts.id).innerHTML="本站已运行: "+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒" ;
         }
       </script>
 		<span class="label label-primary label-md"><strong>转载请标明作者和出处</strong></span><br><span id="show_year"></span> | <a href="http://tongji.baidu.com/web/welcome/ico?s=c3462291b89cf3da802fd625f04c4915" style="color: #bfbfbf" target="_blank">访问量：<span id="busuanzi_container_site_pv"><span id="busuanzi_value_site_pv"></span></span></a> <br> <span id="show_yxts"></span> <br> 今天：<span id="show_time"></span> <br> 备案号：{{ site.bah }}
