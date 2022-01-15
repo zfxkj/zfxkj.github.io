@@ -97,6 +97,20 @@ layout: default
 								</a>
 							</li>
 							{% endif %}
+                            {% if site.RSS %}
+                            <li>
+                            <a href="{{site.base_PATH}}/{{site.RSS}}" >
+                            <i class="fa fa-rss fa-2x" aria-hidden="true"></i>
+                            </a>
+                            </li>
+                            {% endif %}
+					        {% if site.email %}
+                            <li>
+                            <a target="_blank" href="mailto:{{ site.email }}">
+							<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+						    </a>
+					        </li>
+					        {% endif %}
                         </ul>
                     </div>
                 </section>
