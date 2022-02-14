@@ -10,7 +10,12 @@ header-img: "/img/post/ubuntu-mysql.png"
 description:  "本文还含有一些MYSQL的使用方法。"
 ---
 
+# 目录
 {: .no_toc}
+
+* 目录
+{:toc}
+
 
 ## 安装MYSQL
 ``` txt
