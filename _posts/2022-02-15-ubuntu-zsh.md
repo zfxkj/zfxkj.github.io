@@ -68,13 +68,13 @@ source ~/.zshrc
 ![picture](/img/post/zsh3.jpg)
 - agnoster
 ![picture](/img/post/zsh4.jpg)
-[更多主题](https://github.com/ohmyzsh/ohmyzsh/wiki/themes)
+想要查看更多的主题？ [更多主题](https://github.com/ohmyzsh/ohmyzsh/wiki/themes)
 
 ## 卸载zsh
 ```txt
 uninstall_oh_my_zsh zsh
 ```
-删除~/.oh-my-zsh的文件夹和.zshrc的文件，也可以不删除
+删除~/.oh-my-zsh的文件夹和.zshrc的文件，也可以不删除  
 修改shell为默认的
 ```txt
 chsh -s /bin/bash
