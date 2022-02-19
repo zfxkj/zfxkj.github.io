@@ -65,17 +65,20 @@ description:  "本文章介绍一些关于在公众号使用其他程序的方�
 在公众号内发送：`绑定#QQ#QQ号`  
 比如我的QQ号为：123456，那么我的绑定信息如下  
 示例：`绑定#QQ#123456`QQ已经取消使用  
+![login](/img/post/wxbot_more_bdqq.jpg)
 绑定邮箱的方式  
 在公众号内发送：`绑定#邮箱#邮箱地址`  
 比如我的邮箱地址是123@qq.com,那么我的绑定信息如下  
 示例：`绑定#邮箱#123@qq.com`  
+![login](/img/post/wxbot_more_bdyx.jpg)
 绑定方糖或者server酱的方式  
 在公众号内发送：`绑定#key#sendkey`  
 比如我的sendkey是SCT12333,那么我的绑定信息如下  
 示例：`绑定#key#SCT12333`  
+![login](/img/post/wxbot_more_bdsc.jpg)
 如果上面都绑定了，签到结束将会自动给这两个都推送签到结束的消息。  
 换绑只需要重新执行本命令。  
-![login](/img/post/wxbot_more_bdqq.jpg)
+
 
 ## 注意事项
 上方含有`#`的地方`#`发送消息的时候必须带上`#`否则信息无效！！！  
