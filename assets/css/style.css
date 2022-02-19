@@ -92,23 +92,7 @@ a img:hover,a img:focus {
 
 article {
   overflow-x: hidden;
-  background: linear-gradient(125deg, #2c3e50, #27ae60, #2980b9, #e74c3c, #8e44ad);
-  background-size: 400%;
-  animation: bganimation 10s linear infinite
-}
-
-@keyframes bganimation {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
+  background: #7bfff39c;
 }
 
 blockquote {
