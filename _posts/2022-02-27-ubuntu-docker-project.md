@@ -17,6 +17,12 @@ description:  "常用项目的搭建即使用。"
 {:toc}
 
 
+# 温馨提示
+
+下面的程序均用到了docker，如果还没有安装docker请点击下方链接查看docker的安装。
+
+[ubuntu docker 安装](https://www.zfx521.top/blog/2022/02/27/Ubuntu-docker/)
+
 # 1.Alist
 
 ## 1.1 项目展示
