@@ -173,6 +173,7 @@ desc wx;
 rename table wx to wxa;
 #wx为修改前的名称，wxa为修改后的名称
 ```
+重置自增id
 ```txt
 ALTER TABLE wxa AUTO_INCREMENT = 3;
 #将 wxa表 自增 ID 重置为 3
