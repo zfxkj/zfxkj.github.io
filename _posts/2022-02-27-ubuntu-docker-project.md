@@ -92,12 +92,28 @@ Portainer是一个非常好用的Docker可视化面板，可以让你轻松地�
 
 其中第二个`-v`后面的路径`:`左边可以替换成自己的路径，和前面一样端口号也可以替换成自己的。
 
+### 2.2.1 英文版(官方)
+
 ```
 docker run -d -p 8000:8000 -p 9000:9000 --name docker_webui \
     --restart=always \
     -v /var/run/docker.sock:/var/run/docker.sock \
     -v ~/zfx/docker/docker_web_ui:/data \
     cr.portainer.io/portainer/portainer-ce:2.11.1
+```
+
+### 2.2.2 中文版(修改版)
+
+x86一键安装代码
+
+```
+docker run -d --restart=always --name="portainer" -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data 6053537/portainer-ce
+```
+
+arm64一键安装代码
+
+```
+docker run -d --restart=always --name="portainer" -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data 6053537/portainer-ce:linux-arm64
 ```
 
 至此项目搭建完成，可以在浏览器输入`http://你的ip:9000`就可以访问到了，如果上面的端口修改了，这里也要改成相应的端口。
