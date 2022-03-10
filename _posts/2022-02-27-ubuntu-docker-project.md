@@ -202,6 +202,8 @@ docker pull vaultwarden/server:latest  #拉取最新的可视化面板镜像，�
 
 3. [【保姆级教程】利用宝塔面板+Docker搭建一个优秀的密码管理器——Bitwarden](https://blog.laoda.de/archives/bitwarden-docker-install)
 
+4. [portainer-ce中文汉化版](https://hub.docker.com/r/6053537/portainer-ce)
+
 这里做了简化处理，原作者文章内还有视频教程。
 
 如有侵权请联系删除。
