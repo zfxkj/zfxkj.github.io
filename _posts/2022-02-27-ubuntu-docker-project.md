@@ -90,6 +90,7 @@ docker run -d --name pan --restart always \
     -v ~/zfx/docker/pan/pan:/srv \
     -v ~/zfx/docker/pan/filebrowser.db:/database/filebrowser.db \
     -v ~/zfx/docker/pan/settings.json:/config/settings.json \
+    -v ~/zfx/docker/pan/database.db:/database.db \
     -e PUID=$(id -u) \
     -e PGID=$(id -g) \
     -p 5212:80 \
