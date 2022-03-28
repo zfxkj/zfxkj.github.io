@@ -78,6 +78,21 @@ docker run -d --restart=always -v ~/zfx/docker/pan:/opt/alist/data -p 5212:5244 
 
 ```
 
+## 1.4 类似项目
+filebrowers可以自行了解  
+
+运行代码  
+```shell
+docker run -d --name pan --restart always \
+    -v ~/zfx/docker/pan/pan:/srv \
+    -v ~/zfx/docker/pan/filebrowser.db:/database/filebrowser.db \
+    -v ~/zfx/docker/ppan/settings.json:/config/settings.json \
+    -e PUID=$(id -u) \
+    -e PGID=$(id -g) \
+    -p 5212:80 \
+    filebrowser/filebrowser:latest
+```
+
 # 2.docker可视化面板
 
 ## 2.1 项目简介
@@ -129,21 +144,6 @@ docker pull cr.portainer.io/portainer/portainer-ce:2.11.1  #拉取最新的可�
 ```
 
 再次执行项目搭建的代码就可以运行了。
-
-## 2.4 类似项目
-filebrowers可以自行了解  
-
-运行代码
-```shell
-docker run -d --name pan --restart always \
-    -v ~/zfx/docker/pan/pan:/srv \
-    -v ~/zfx/docker/pan/filebrowser.db:/database/filebrowser.db \
-    -v ~/zfx/docker/ppan/settings.json:/config/settings.json \
-    -e PUID=$(id -u) \
-    -e PGID=$(id -g) \
-    -p 5212:80 \
-    filebrowser/filebrowser:latest
-```
 
 # 3.密码管理器
 
