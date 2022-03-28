@@ -43,19 +43,19 @@ Alist文档地址：[https://alist-doc.nn.ci/en/](https://alist-doc.nn.ci/en/)
 
 稳定版
 
-```
+```shell
 docker run -d --restart=always -v ~/zfx/docker/pan:/opt/alist/data -p 5212:5244 --name="alist" xhofe/alist:latest
 ```
 
 开发版
 
-```
+```shell
 docker run -d --restart=always -v ~/zfx/docker/pan:/opt/alist/data -p 5212:5244 --name="alist" xhofe/alist:v2
 ```
 
 查看初始密码
 
-```
+```shell
 docker logs alist
 # 或者
 docker exec -it alist ./alist -password
@@ -65,7 +65,7 @@ docker exec -it alist ./alist -password
 
 ## 1.3 更新Alist
 
-```
+```shell
 docker stop alist  #停止alist容器
 
 docker rm -f alist  #删除alist容器，因为之前映射到了本地，所以数据不会被删除
@@ -112,7 +112,7 @@ Portainer是一个非常好用的Docker可视化面板，可以让你轻松地�
 
 ### 2.2.1 英文版(官方)
 
-```
+```shell
 docker run -d -p 8000:8000 -p 9000:9000 --name docker_webui \
     --restart=always \
     -v /var/run/docker.sock:/var/run/docker.sock \
@@ -124,13 +124,13 @@ docker run -d -p 8000:8000 -p 9000:9000 --name docker_webui \
 
 x86一键安装代码
 
-```
+```shell
 docker run -d --restart=always --name="portainer" -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data 6053537/portainer-ce
 ```
 
 arm64一键安装代码
 
-```
+```shell
 docker run -d --restart=always --name="portainer" -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data 6053537/portainer-ce:linux-arm64
 ```
 
@@ -138,7 +138,7 @@ docker run -d --restart=always --name="portainer" -p 9000:9000 -v /var/run/docke
 
 ## 2.3 更新面板
 
-```
+```shell
 docker stop docker_webui  #停止可视化面板容器
 
 docker rm -f docker_webui  #删除可视化面板容器，因为之前映射到了本地，所以数据不会被删除
@@ -166,7 +166,7 @@ Github项目地址：[https://github.com/dani-garcia/vaultwarden](https://github
 
 其中`-v`后面的路径`:`左边可以替换成自己的路径，和前面一样端口号也可以替换成自己的。
 
-```
+```shell
 docker run -d --name bitwardenrs \
   --restart always \
   -e WEBSOCKET_ENABLED=true \
@@ -178,14 +178,14 @@ docker run -d --name bitwardenrs \
 
 现在程序已经搭建完成去浏览器访问`http://你的ip:6666`即可看到页面，先注册一个账号，现在是所有人都可以注册的状态，如果不想让其他人注册也很简单，继续往下看
 
-```
+```shell
 docker stop bitwardenrs  #停止容器
 docker rm -f bitwardenrs  #删除容器
 ```
 
 重新执行下边的代码。（禁止用户注册代码）
 
-```
+```shell
 docker run -d --name bitwardenrs \
   --restart always \
   -e SIGNUPS_ALLOWED=false \
@@ -200,7 +200,7 @@ docker run -d --name bitwardenrs \
 
 ## 3.3 更新密码管理器
 
-```
+```shell
 docker stop bitwardenrs  #停止密码管理器容器
 
 docker rm -f bitwardenrs  #删除密码管理器容器，因为之前映射到了本地，所以数据不会被删除
