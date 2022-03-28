@@ -83,6 +83,9 @@ filebrowers可以自行了解
 
 运行代码  
 ```shell
+mkdir ~/zfx/docker/pan #创建宿主机目录
+cd ~/zfx/docker/pan #进入目录
+touch filebrowser.db && touch settings.json #创建空配置文件
 docker run -d --name pan --restart always \
     -v ~/zfx/docker/pan/pan:/srv \
     -v ~/zfx/docker/pan/filebrowser.db:/database/filebrowser.db \
