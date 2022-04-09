@@ -6,7 +6,7 @@ category : [Git]
 tags : [Git,GitHub,Gitee]
 date:       2021-11-13
 author:     "晨曦"
-header-img: "/img/post/git-bg.jpg"
+header-img: "https://pan-1256416840.cos.ap-beijing.myqcloud.com/git-bg-6d7a5b65-872e-4846-b0dd-9e9e05fd7556.jpg"
 description:  "本文主要介绍一些简单的命令：包括clone, add, commit, push, pull, branch等"
 ---
   

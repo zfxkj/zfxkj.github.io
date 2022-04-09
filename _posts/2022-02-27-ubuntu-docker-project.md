@@ -6,7 +6,7 @@ category : [ubuntu,docker]
 tags : [ubuntu,docker]
 date:    2022-02-27
 author:   "小张"
-header-img: "/img/post/ubuntu_docker.png"
+header-img: "https://pan-1256416840.cos.ap-beijing.myqcloud.com/ubuntu_docker-827dd4bd-7994-4d7e-8348-f731e1569d0e.png"
 description:  "常用项目的搭建即使用。"
 ---
 
@@ -33,7 +33,7 @@ Demo：[https://alist.nn.ci](https://alist.nn.ci)
 
 Alist文档地址：[https://alist-doc.nn.ci/en/](https://alist-doc.nn.ci/en/)
 
-![picture](/img/post/docker_alist.png)
+![docker_alist-2d6e32f8-e41a-4967-b2ca-1e86f1a667c6](https://pan-1256416840.cos.ap-beijing.myqcloud.com/docker_alist-2d6e32f8-e41a-4967-b2ca-1e86f1a667c6.png)
 
 ## 1.2 项目搭建
 
@@ -105,7 +105,7 @@ Portainer是一个非常好用的Docker可视化面板，可以让你轻松地�
 
 官网：[https://www.portainer.io/](https://www.portainer.io/)
 
-![picture](/img/post/docker_ui.png)
+![docker_ui-2d2938ad-79ed-4979-af15-90d9d7888472](https://pan-1256416840.cos.ap-beijing.myqcloud.com/docker_ui-2d2938ad-79ed-4979-af15-90d9d7888472.png)
 
 ## 2.2 项目搭建
 
@@ -161,7 +161,7 @@ Bitwarden 是一款开源密码管理器，它会将所有密码加密存储在�
 
 Github项目地址：[https://github.com/dani-garcia/vaultwarden](https://github.com/dani-garcia/vaultwarden)
 
-![picture](/img/post/docker_password.png)
+![docker_password-aea15552-c6bc-489e-a77b-6df6924ffe75](https://pan-1256416840.cos.ap-beijing.myqcloud.com/docker_password-aea15552-c6bc-489e-a77b-6df6924ffe75.png)
 
 ## 3.2 项目搭建
 
