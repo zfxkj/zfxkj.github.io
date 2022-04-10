@@ -240,7 +240,7 @@ Android: DSub, Subtracks, subreamer, Ultrasonic, Audinaut
 
 ## 4.2 项目搭建
 
-使用docker-compose来运行。创建docker-compose.yml的文件将下面的内容复制进去，输入‵docker-compose up -d‵即可运行。
+使用docker-compose来运行。创建docker-compose.yml的文件将下面的内容复制进去，输入`docker-compose up -d`即可运行。
 
 ```shell
 version: "3"
