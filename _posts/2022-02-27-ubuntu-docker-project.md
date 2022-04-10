@@ -291,6 +291,8 @@ docker pull deluan/navidrome:latest  #拉取最新镜像
 
 4. [portainer-ce中文汉化版](https://hub.docker.com/r/6053537/portainer-ce)
 
+5. [搭建一个完全自由的音乐播放软件————Navidrome 随时随地！想听就听！](https://blog.laoda.de/archives/navidrome)
+
 这里做了简化处理，原作者文章内还有视频教程。
 
 如有侵权请联系删除。
