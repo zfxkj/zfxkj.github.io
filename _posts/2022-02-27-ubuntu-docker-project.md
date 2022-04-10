@@ -211,6 +211,74 @@ docker pull vaultwarden/server:latest  #拉取最新的可视化面板镜像，�
 
 再次执行项目搭建的代码就可以运行了。
 
+# 4.音乐播放器
+
+## 4.1 项目简介
+
+随着国内版权意识的提高，现在想听一首歌曲，往往我们可能要切换3-4个APP——网易云音乐、QQ音乐、咪咕音乐……切换起来很麻烦，有的APP就算你买了VIP服务，下载的歌曲还是加密的，一旦VIP到期后某些歌你还听不了，非常蛋疼。
+
+最近被朋友推荐入了苹果自己家的音乐APP，感觉还不错，但是搜索特定的几个歌手的歌曲时候，也发现搜索不到（没错，就是南京小李的）
+
+正好自己目前在捣鼓PT，手握几个大型PT站，资源方面不成问题，于是乎就又想着自建一个类似云音乐的服务，这样随时随地在任何地方都能播放我想听的任何歌曲，再也不用担心歌曲被下架了。
+
+Navidrome，使用Go语言开发，内存占用很低，界面简单，而且还兼容Subsonic API，就搞了一个玩玩。
+
+![202201151230016-c618aca6-c486-4fd3-8bae-5aaffba1589e](https://pan-1256416840.cos.ap-beijing.myqcloud.com/202201151230016-c618aca6-c486-4fd3-8bae-5aaffba1589e.png)
+
+支持的客户端
+```text
+iOS: play:Sub, substreamer, Amperfy, iSub
+Android: DSub, Subtracks, subreamer, Ultrasonic, Audinaut
+网页端: Subplayer, Airsonic Refix, Aurial, Jamstash, Subfire
+桌面端: Sublime Music（Linux）和Sonixd（Windows/Linux/MacOS）
+命令行: Jellycli（Windows/Linux）和STMP（Linux/MacOS）
+```
+
+官网地址：[https://www.navidrome.org/demo/](https://www.navidrome.org/demo/)
+
+官网演示地址：[https://demo.navidrome.org/app/](https://demo.navidrome.org/app/)
+
+## 4.2 项目搭建
+
+使用docker-compose来运行。创建docker-compose.yml的文件将下面的内容复制进去，输入‵docker-compose up -d‵即可运行。
+
+```shell
+version: "3"
+services:
+  navidrome:
+    image: deluan/navidrome:latest
+    ports:
+      - "4533:4533"   # 左边可以改成自己服务器未被占用的端口
+    environment:
+      # Optional: put your config options customization here. Examples(这些都是可选的):
+      ND_SCANSCHEDULE: 1m
+      ND_LASTFM_ENABLED:
+      ND_LASTFM_APIKEY: eabdf1d50c0e912487521b154a8es1fda694 # 修改成自己的APIKEY
+      ND_LASTFM_SECRET: a67666ca4as89d7231cf9fc990ef8a2ae6d  # 修改成自己的SECRET
+      ND_SPOTIFY_ID: 4cd036bsqd1594bd0b41bc8f94c46846d  # 修改成自己的ID
+      ND_SPOTIFY_SECRET: 249ca01a48be46fcb084523a6b267661bb1  # 修改成自己的SECRET
+      ND_LASTFM_LANGUAGE: zh
+      ND_LOGLEVEL: info
+      ND_SESSIONTIMEOUT: 24h
+      ND_BASEURL: ""
+    volumes:
+      - "~/zfx/docker/music/data:/data"
+      - "~/zfx/docker/music/file:/music:ro"  # 冒号左边修改成自己本地的音乐文件夹路径
+```
+
+## 4.3 更新音乐管理器
+
+```shell
+docker stop music  #停止容器
+
+docker rm -f music  #删除容器，因为之前映射到了本地，所以数据不会被删除
+
+docker pull deluan/navidrome:latest  #拉取最新镜像
+```
+
+再次执行项目搭建的代码就可以运行了。
+
+
 # 免责声明
 
 上面的程序来自[咕咕鸽](https://blog.laoda.de/)的文章
