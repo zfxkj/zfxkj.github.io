@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ubuntu docker项目
-subtitle: "3个docker必备项目。"
+subtitle: "4个docker必备项目。"
 category : [ubuntu,docker]
 tags : [ubuntu,docker]
 date:    2022-02-27
@@ -250,13 +250,6 @@ services:
     ports:
       - "4533:4533"   # 左边可以改成自己服务器未被占用的端口
     environment:
-      # Optional: put your config options customization here. Examples(这些都是可选的):
-      ND_SCANSCHEDULE: 1m
-      ND_LASTFM_ENABLED:
-      ND_LASTFM_APIKEY: eabdf1d50c0e912487521b154a8es1fda694 # 修改成自己的APIKEY
-      ND_LASTFM_SECRET: a67666ca4as89d7231cf9fc990ef8a2ae6d  # 修改成自己的SECRET
-      ND_SPOTIFY_ID: 4cd036bsqd1594bd0b41bc8f94c46846d  # 修改成自己的ID
-      ND_SPOTIFY_SECRET: 249ca01a48be46fcb084523a6b267661bb1  # 修改成自己的SECRET
       ND_LASTFM_LANGUAGE: zh
       ND_LOGLEVEL: info
       ND_SESSIONTIMEOUT: 24h
@@ -289,9 +282,9 @@ docker pull deluan/navidrome:latest  #拉取最新镜像
 
 3. [【保姆级教程】利用宝塔面板+Docker搭建一个优秀的密码管理器——Bitwarden](https://blog.laoda.de/archives/bitwarden-docker-install)
 
-4. [portainer-ce中文汉化版](https://hub.docker.com/r/6053537/portainer-ce)
+4. [搭建一个完全自由的音乐播放软件————Navidrome 随时随地！想听就听！](https://blog.laoda.de/archives/navidrome)
 
-5. [搭建一个完全自由的音乐播放软件————Navidrome 随时随地！想听就听！](https://blog.laoda.de/archives/navidrome)
+5. [portainer-ce中文汉化版](https://hub.docker.com/r/6053537/portainer-ce)
 
 这里做了简化处理，原作者文章内还有视频教程。
 
