@@ -250,6 +250,7 @@ services:
     ports:
       - "4533:4533"   # 左边可以改成自己服务器未被占用的端口
     environment:
+      ND_ENABLETRANSCODINGCONFIG: true
       ND_LASTFM_LANGUAGE: zh
       ND_LOGLEVEL: info
       ND_SESSIONTIMEOUT: 24h
