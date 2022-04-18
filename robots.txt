@@ -1,2 +1,2 @@
 User-agent: *
-Disallow:
+Disallow:/googled0727ba768f76b5.html
