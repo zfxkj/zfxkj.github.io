@@ -16,7 +16,7 @@ description:  "本文章介绍一些关于在公众号使用小米运动的方�
   
 ## 前期准备
 **下方文章为必看内容，否则无法使用**  
-小米运动刷步数文章，请[点击此处]([https://mp.weixin.qq.com/s/B7Q0mnjjigy87esCgBNySQ)  
+小米运动刷步数文章，请[点击此处](https://mp.weixin.qq.com/s/B7Q0mnjjigy87esCgBNySQ)  
   
 ## 使用方法
 **请先看前期准备否则无效！！！**  
