@@ -1,0 +1,56 @@
+{
+    "common": {
+        "splash": {
+            "enable": true,
+            "exceptVersion": 0
+        },
+        "main": {
+            "enable": false,
+            "exceptVersion": 0
+        },
+        "settings": {
+            "enable": true,
+            "exceptVersion": 0
+        },
+        "about": {
+            "enable": true,
+            "exceptVersion": 0
+        }
+    },
+    "huawei": {
+        "splash": {
+            "enable": true,
+            "exceptVersion": 0
+        },
+        "main": {
+            "enable": true,
+            "exceptVersion": 0
+        },
+        "settings": {
+            "enable": true,
+            "exceptVersion": 0
+        },
+        "about": {
+            "enable": true,
+            "exceptVersion": 0
+        }
+    },
+    "xiaomi": {
+        "splash": {
+            "enable": false,
+            "exceptVersion": 0
+        },
+        "main": {
+            "enable": false,
+            "exceptVersion": 0
+        },
+        "settings": {
+            "enable": true,
+            "exceptVersion": 0
+        },
+        "about": {
+            "enable": true,
+            "exceptVersion": 0
+        }
+    }
+}
