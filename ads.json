@@ -9,11 +9,11 @@
             "exceptVersion": 0
         },
         "settings": {
-            "enable": true,
+            "enable": false,
             "exceptVersion": 0
         },
         "about": {
-            "enable": true,
+            "enable": false,
             "exceptVersion": 0
         }
     },
@@ -23,15 +23,15 @@
             "exceptVersion": 0
         },
         "main": {
-            "enable": true,
+            "enable": false,
             "exceptVersion": 0
         },
         "settings": {
-            "enable": true,
+            "enable": false,
             "exceptVersion": 0
         },
         "about": {
-            "enable": true,
+            "enable": false,
             "exceptVersion": 0
         }
     },
@@ -45,7 +45,7 @@
             "exceptVersion": 0
         },
         "settings": {
-            "enable": true,
+            "enable": false,
             "exceptVersion": 0
         },
         "about": {
