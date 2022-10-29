@@ -28,7 +28,7 @@ description:  "本文章介绍一些关于在公众号使用其他程序的方�
 示例3：`听#演员`  
 以上3种方式都行，  
 你也可以在上面加上歌手名字，  
-示例：`听 演员 薛之谦`  
+示例：`听#演员 薛之谦`  
 ![wxbot_more_music-263214a8-8a3d-4ea3-9e18-e056f9986a0d](https://pan-1256416840.cos.ap-beijing.myqcloud.com/wxbot_more_music-263214a8-8a3d-4ea3-9e18-e056f9986a0d.jpg)
   
 ## 视频解析
