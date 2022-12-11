@@ -74,6 +74,10 @@ description:  "本文章介绍一些关于在公众号使用其他程序的方�
 比如我的sendkey是SCT12333,那么我的绑定信息如下  
 示例：`绑定#key#SCT12333`  
 ![wxbot_more_bdsc-fc419667-3767-49e2-af2d-32d9e4547ccb](https://pan-1256416840.cos.ap-beijing.myqcloud.com/wxbot_more_bdsc-fc419667-3767-49e2-af2d-32d9e4547ccb.jpg)
+如果想要解除绑定也很简单  
+示例：`绑定#key#clear`  
+示例：`绑定#邮箱#clear`  
+示例：`绑定#QQ#clear`  
 如果上面都绑定了，签到结束将会自动给这两个都推送签到结束的消息。  
 换绑只需要重新执行本命令。  
 
