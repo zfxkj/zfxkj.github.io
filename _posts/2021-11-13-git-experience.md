@@ -125,6 +125,12 @@ ssh-keygen -t rsa -C myemail@example.com
 git config --global user.name "my_github_username"
 # 设置全局用户名为自己的邮箱
 git config –global user.email myemail@example.com
+# 设置全局代理
+git config --global https.proxy http://127.0.0.1:1080
+git config --global https.proxy https://127.0.0.1:1080
+# 取消全局代理
+git config --global --unset http.proxy
+git config --global --unset https.proxy
 # 将输出的内容（以ssh-rsa开头，以myemail@example.com结尾）复制
 cat ~/.ssh/id_rsa.pub
 ```
