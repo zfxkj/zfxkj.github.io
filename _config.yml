@@ -50,7 +50,7 @@ anchorjs: true
 
 # page Sidebar settings
 sidebar-about-description: "ZFX 学习笔记"
-sidebar-avatar: /img/me2.jpg
+sidebar-avatar: https://avatars.githubusercontent.com/u/31238863
 
 #备案号
 bah: "豫ICP备2021032942号"
