@@ -244,6 +244,8 @@ du -h --max-depth=1 ./
 
 下载视频
 
+pip安装
+
 ```bash
 yt-dlp
 you-get
