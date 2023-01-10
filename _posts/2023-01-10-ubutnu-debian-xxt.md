@@ -6,7 +6,7 @@ category : [ubuntu,debian]
 tags : [ubuntu,debian]
 date:    2023-01-10
 author:   "小张"
-header-img: "https://pan-1256416840.cos.ap-beijing.myqcloud.com/debian_vs_ubuntu.png"
+header-img: "https://pan-1256416840.cos.ap-beijing.myqcloud.com/debian-vs-ubuntu.jpg"
 description:  "新系统配置及常见问题"
 ---
 
@@ -87,7 +87,7 @@ chsh -s /bin/zsh
 首先安装wget,git和curl
 
 ```bash
-sudo apt install wget git -y
+sudo apt install wget git curl -y
 ```
 
 使用 curl 下载脚本并安装：
@@ -132,7 +132,7 @@ oh-my-zsh 已经内置了 git 插件，内置插件可以在 `～/.oh-my-zsh/plu
 
 #### zsh-autosuggestions
 
-[zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) 是一个命令提示插件，，当你输入命令时，会自动推测你可能需要输入的命令，按下右键可以快速采用建议。效果如下：
+[zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) 是一个命令提示插件，当你输入命令时，会自动推测你可能需要输入的命令，按下右键可以快速采用建议。效果如下：
 
 ![](https://pan-1256416840.cos.ap-beijing.myqcloud.com/zsh-autosuggestions.png)
 
