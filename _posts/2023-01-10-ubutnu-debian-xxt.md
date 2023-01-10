@@ -10,6 +10,12 @@ header-img: "https://pan-1256416840.cos.ap-beijing.myqcloud.com/debian-vs-ubuntu
 description:  "新系统配置及常见问题"
 ---
 
+# 目录
+{: .no_toc}
+
+* 目录
+{:toc}
+
 # zsh 安装及配置
 
 ## 更新软件源及软件
