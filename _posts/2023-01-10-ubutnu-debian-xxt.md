@@ -28,6 +28,8 @@ sudo cp /etc/apt/sources.list /etc/apt/sources.list_bak
 
 ubuntu修改源文件为清华源`/etc/apt/sources.list`
 
+ubutnu 适用版本：`14.04 LTS~22.04 LTS`
+
 ```bash
 sudo sed -i "s@http://.*archive.ubuntu.com@https://mirrors.tuna.tsinghua.edu.cn@g" /etc/apt/sources.list
 sudo sed -i "s@http://.*security.ubuntu.com@https://mirrors.tuna.tsinghua.edu.cn@g" /etc/apt/sources.list
