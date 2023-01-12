@@ -37,7 +37,7 @@ sudo sed -i "s@http://.*security.ubuntu.com@https://mirrors.tuna.tsinghua.edu.cn
 
 debian修改源文件为清华源`/etc/apt/sources.list`
 
-debian 适用版本为：`bullseye`
+debian 适用版本为：`11 bullseye`
 
 ```bash
 sudo apt install apt-transport-https ca-certificates
