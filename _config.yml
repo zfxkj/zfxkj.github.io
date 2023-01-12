@@ -23,9 +23,9 @@ google_analytics_domain: auto
 permalink: /blog/:year/:month/:day/:title/
 
 header-img: /img/default-bg.jpg
-WeChatPublic: /img/qrcode_WeChatPublic.jpg
-zfb_pay: /img/zfb_pay.jpg
-wx_pay: /img/wx_pay.jpg
+WeChatPublic: https://pan-1256416840.cos.ap-beijing.myqcloud.com/qrcode_WeChatPublic.jpg
+zfb_pay: https://pan-1256416840.cos.ap-beijing.myqcloud.com/zfb_pay.jpg
+wx_pay: https://pan-1256416840.cos.ap-beijing.myqcloud.com/wx_pay.jpg
 
 RSS: feed.xml
 categories_path: categories
