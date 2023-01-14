@@ -126,7 +126,7 @@ git config --global user.name "my_github_username"
 # 设置全局用户名为自己的邮箱
 git config –global user.email myemail@example.com
 # 设置全局代理
-git config --global https.proxy http://127.0.0.1:1080
+git config --global http.proxy http://127.0.0.1:1080
 git config --global https.proxy https://127.0.0.1:1080
 # 取消全局代理
 git config --global --unset http.proxy
