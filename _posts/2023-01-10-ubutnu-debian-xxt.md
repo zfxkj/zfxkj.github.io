@@ -330,3 +330,15 @@ sudo whoami
 第三行为启用鼠标，可以用滚轮进项上下滑动，点击即可将光标移动到相应位置
 
 更多使用方法可以查看[vim 极速教程](https://mp.weixin.qq.com/s/nYH463gI6_IH0jN8pYamQQ)
+
+
+
+## swap 内存添加
+
+在`root`模式下运行
+
+数值单位为`MB`
+
+```bash
+wget -O box.sh https://raw.githubusercontent.com/BlueSkyXN/SKY-BOX/main/box.sh && chmod +x box.sh && clear && ./box.sh
+```
