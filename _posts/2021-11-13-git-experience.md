@@ -83,7 +83,17 @@ description:  "本文主要介绍一些简单的命令：包括clone, add, commi
   push命令与pull命令是类似的，因此只举一个例子，上传本地当前分支到远程master分支：  
 `git push -u origin master`  
   如果已经在本地新建一个dev分支，但是远程仓库并没有这个分支，可以使用以下命令在远程建立dev分支的同时把本地的dev分支推送到远程的dev分支（需要**保证此时在dev分支下**执行命令）：  
-  `git push origin dev:dev`  
+`git push origin dev:dev`  
+
+## tag
+  删除远程v2.23.1的tag
+`git push --delete origin v2.23.1`
+  删除本地tag
+`git tag -d v2.23.1`
+  新建tag
+`git tag -a v2.23.1 -m "描述"`
+  同步tag到远程
+`git push --tags`
 
 ## log
   查看最近5次的提交日志：  
