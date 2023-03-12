@@ -86,14 +86,14 @@ description:  "本文主要介绍一些简单的命令：包括clone, add, commi
 `git push origin dev:dev`  
 
 ## tag
-  删除远程v2.23.1的tag
-`git push --delete origin v2.23.1`
-  删除本地tag
-`git tag -d v2.23.1`
-  新建tag
-`git tag -a v2.23.1 -m "描述"`
-  同步tag到远程
-`git push --tags`
+  删除远程v2.23.1的tag：  
+`git push --delete origin v2.23.1`  
+  删除本地tag：  
+`git tag -d v2.23.1`  
+  新建tag：  
+`git tag -a v2.23.1 -m "描述"`  
+  同步tag到远程：  
+`git push --tags`  
 
 ## log
   查看最近5次的提交日志：  
