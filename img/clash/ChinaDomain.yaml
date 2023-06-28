@@ -94,6 +94,8 @@ payload:
 
   # ByteDance
   - '+.amemv.com'
+  - '+.gitee.io'
+  - '+.gitee.com'
   - '+.bdxiguaimg.com'
   - '+.bdxiguastatic.com'
   - '+.byted-static.com'
