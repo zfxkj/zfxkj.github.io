@@ -307,7 +307,7 @@ sudo whoami
 
 显示root即为添加成功
 
-如果不行可以修改`/etc/sudoers.d/username`文件
+如果不行可以修改`/etc/sudoers`文件
 
 添加`username ALL=(ALL)ALL`即可
 
