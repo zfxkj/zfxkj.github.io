@@ -56,13 +56,13 @@ all.css
   }
   .top_menu ul {
     list-style: none;
-    height: 100px;
+    height: 70px;
   }
   .top_menu ul li {
     float: left;
     text-align: center;
-    width: 100px;
-    height: 50px;
+    width: 110px;
+    height: 60px;
     font-size: 30px;
     line-height: 50px;
     color: cornflowerblue;
@@ -178,10 +178,9 @@ index.html
       <a href="/?ym=14&kip=0"><li>机械</li></a>
       <a href="/?ym=15&kip=0"><li>城市</li></a>
       <a href="/?ym=16&kip=0"><li>动物</li></a>
-      <a href="/?ym=17&kip=0"><li>影视</li></a>
     </ul>
   </div>
-  <button><a href="/logout">退出</a></button>
+  <button><a href="/">退出</a></button>
   <div class="jpg">
     <table border="0">
     {% for img_jpg in list_jpg %}
@@ -208,11 +207,10 @@ index.html
 ```
 app.py
 ```python
-from flask import Flask, request,  redirect, render_template,session
-from sql import *
+from flask import Flask, request, render_template
 from bzm import start
+
 app = Flask(__name__)
-app.secret_key='QWERTYUIOP'#对用户信息加密
 
 
 @app.route('/',methods=['GET','POST'])
@@ -220,17 +218,27 @@ def index():
     if request.args.get('ym'):
         ym = request.args.get('ym')
     else:
-        ym = 1
+        ym = "1"
     if request.args.get('kip'):
         kip = request.args.get('kip')
     else:
         kip = 0
-    ex = start(ym,kip)
+    if request.args.get('qs'):
+        qs = request.args.get('qs')
+    else:
+        qs = None
+    try:
+        ex = start(ym,kip,qs)
+    except:
+        ex= ["图集加载失败"]
     ymk = "当前页面：" + str(kip)
-    return render_template('index.html',user=user_info,list_jpg=ex,ymk=ymk)
+    return render_template('index.html',user="test",list_jpg=ex,ymk=ymk)
+
+
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0',debug=True)
+    app.run(host='0.0.0.0',debug=True,port=5002)
+
 ```
 bzm.py
 ```python
@@ -257,11 +265,10 @@ category_dict = {
     '13':["男人", 'category/4e4d610cdf714d2966000006/','',skip[0],'category%2F4e4d610cdf714d2966000006%2F',order],
     '14':["机械", 'category/4e4d610cdf714d2966000005/','',skip[0],'category%2F4e4d610cdf714d2966000005%2F',order],
     '15':["城市", 'category/4fb47a305ba1c60ca5000223/','',skip[0],'category%2F4fb47a305ba1c60ca5000223%2F',order],
-    '16':["动物", 'category/4e4d610cdf714d2966000001/','',skip[0],'category%2F4e4d610cdf714d2966000001%2F',order],
-    '17':["影视", 'category/4e58c2570569791a19000000/','',skip[0],'category%2F4e58c2570569791a19000000%2F',order]
+    '16':["动物", 'category/4e4d610cdf714d2966000001/','',skip[0],'category%2F4e4d610cdf714d2966000001%2F',order]
 }
 
-def xh(url, file_name):
+def xh(url, qs):
     headers = {
         'User-Agent': 'Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Raspbian Chromium/74.0.3729.157 Chrome/74.0.3729.157 Safari/537.36'
     }
@@ -271,38 +278,41 @@ def xh(url, file_name):
     q = []
     list2 = []
     ff = 0
-    for a in qq2:
-        if ff == 0:
-            list2.append(a.ge("img"))
-            ff = ff + 1
-        elif ff == 1:
-            list2.append(a.ge("img"))
-            ff = ff + 1
-        elif ff == 2:
-            list2.append(a.ge("img"))
-            ff = ff + 1
-        elif ff == 3:
-            list2.append(a.ge("img"))
-            ff = ff + 1
-        else:
-            ff = 0
-            q.append(list2)
-            list2 = []
+    if qs == None:
+        for a in qq2:
+            if ff == 0:
+                list2.append(a.get("img"))
+                ff = ff + 1
+            elif ff == 1:
+                list2.append(a.get("img"))
+                ff = ff + 1
+            elif ff == 2:
+                list2.append(a.get("img"))
+                ff = ff + 1
+            elif ff == 3:
+                list2.append(a.get("img"))
+                ff = ff + 1
+            else:
+                ff = 0
+                q.append(list2)
+                list2 = []
+    else:
+        for a in qq2:
+            q.append(a.get("img"))
     return q
 
 
-def start(ym,kip):
+def start(ym,kip,qs):
     display= ''
-    for i in range(1,18):
+    for i in range(1,17):
         display = display + '{}={},'.format(str(i), category_dict[str(i)][0])
     display = display[:-1]
-    index = ym
-    item = category_dict[index]
-    kip = int(kip) * 16
-    item[3] = int(kip)
+    item = category_dict[str(ym)]
+    item[3] = int(kip) * 16
     url = url_template.format(item[1], item[2], item[3], item[4], item[5])
-    txt = xh(url, item[0])
+    txt = xh(url, qs)
     return txt
+
 ```
 
 ## 项目声明
