@@ -24,6 +24,7 @@ permalink: /blog/:year/:month/:day/:title/
 
 # 网站图标
 icon: /favicon.ico
+domain: www.zfxkj.top
 
 header-img: /img/default-bg.jpg
 WeChatPublic: /img/post/qrcode_WeChatPublic.jpg
