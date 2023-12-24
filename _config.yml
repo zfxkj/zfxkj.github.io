@@ -22,6 +22,9 @@ disqus_base: http://www.zfxkj.top/
 
 permalink: /blog/:year/:month/:day/:title/
 
+# 网站图标
+icon: /favicon.ico
+
 header-img: /img/default-bg.jpg
 WeChatPublic: /img/post/qrcode_WeChatPublic.jpg
 zfb_pay: /img/post/zfb_pay.jpg
@@ -36,11 +39,11 @@ about_path: about
 BASE_PATH:
 
 qq: 2675699284
-gitee_username: ZFX521
-zhihu_username: ZFXKJ
+gitee_username: zfx521
+zhihu_username: zfxkj
 weibo_username:     
 facebook_username:
-github_username: ZFXkj
+github_username: zfxkj
 email: 2675699284@qq.com
 linkedin:
 

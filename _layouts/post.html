@@ -192,7 +192,7 @@ layout: default
 					{% else %}
 						{% for category in categories_list %}
 							<li><a href="{{ site.BASE_PATH }}/{{ site.categories_path }}#{{ category[0] }}-ref">
-								{{ category[0] | join: "/" }} <span>/{{ category[1].size }})</span>
+								{{ category[0] | join: "/" }} <span>({{ category[1].size }})</span>
 							</a></li>
 						{% endfor %}
 					{% endif %}
