@@ -13,19 +13,19 @@ kramdown:
 
 gems: [jekyll-paginate, jekyll-sitemap, jekyll-feed]
 
-disqus: zfx521
+disqus: zfxkj
 disqus_base: http://www.zfxkj.top/
 
 # https://developers.google.com/analytics/devguides/collection/analyticsjs/
-google_analytics_id: UA-97824262-2
-google_analytics_domain: auto
+# google_analytics_id: UA-97824262-2
+# google_analytics_domain: auto
 
 permalink: /blog/:year/:month/:day/:title/
 
 header-img: /img/default-bg.jpg
-WeChatPublic: https://pan-1256416840.cos.ap-beijing.myqcloud.com/qrcode_WeChatPublic.jpg
-zfb_pay: https://pan-1256416840.cos.ap-beijing.myqcloud.com/zfb_pay.jpg
-wx_pay: https://pan-1256416840.cos.ap-beijing.myqcloud.com/wx_pay.jpg
+WeChatPublic: /img/post/qrcode_WeChatPublic.jpg
+zfb_pay: /img/post/zfb_pay.jpg
+wx_pay: /img/post/wx_pay.jpg
 
 RSS: feed.xml
 categories_path: categories

@@ -6,7 +6,7 @@ category : [wxbot]
 tags : [wxbot,小米运动]
 date:       2021-11-15
 author:     "小张"
-header-img: "https://pan-1256416840.cos.ap-beijing.myqcloud.com/wxbot-xmyd-381b94c7-8113-4fa7-ae45-d168cdc6f85b.jpg"
+header-img: "/img/post/wxbot-xmyd-381b94c7-8113-4fa7-ae45-d168cdc6f85b.jpg"
 description:  "本文章介绍一些关于在公众号使用小米运动的方法。。。"
 ---
 
@@ -32,7 +32,7 @@ description:  "本文章介绍一些关于在公众号使用小米运动的方�
 那我登录的消息应该为：`小米运动#登录#13600000000#abcde123`  
 假设我的账号为：`xxxxx@qq.com`密码为：`abcde123`  
 那我登录的消息应该为：`小米运动#登录#xxxxx@qq.com#abcde123`  
-![wxbot_xmyd_login-1b2d5105-a6b8-428a-a1ca-dfd5b1c3b4dd](https://pan-1256416840.cos.ap-beijing.myqcloud.com/wxbot_xmyd_login-1b2d5105-a6b8-428a-a1ca-dfd5b1c3b4dd.jpg)
+![wxbot_xmyd_login-1b2d5105-a6b8-428a-a1ca-dfd5b1c3b4dd](/img/post/wxbot_xmyd_login-1b2d5105-a6b8-428a-a1ca-dfd5b1c3b4dd.jpg)
 上面是演示登陆所以密码是错误的，你们把账号和密码替换成自己的好了。  
 如果显示登录成功就可以签到了。  
 
@@ -47,13 +47,13 @@ description:  "本文章介绍一些关于在公众号使用小米运动的方�
 ### 签到
 不修改步数，默认签到后的步数是2万步到2.5万步中间的随机步数，  
 签到消息为：`小米运动#签到`  
-![wxbot_xmyd_qd-0b84dbad-0312-45f9-81b3-4f95f5e8ab2e](https://pan-1256416840.cos.ap-beijing.myqcloud.com/wxbot_xmyd_qd-0b84dbad-0312-45f9-81b3-4f95f5e8ab2e.jpg)
+![wxbot_xmyd_qd-0b84dbad-0312-45f9-81b3-4f95f5e8ab2e](/img/post/wxbot_xmyd_qd-0b84dbad-0312-45f9-81b3-4f95f5e8ab2e.jpg)
 
 ### 查看签到信息
 签到时间为2分钟，签到结束后可以查看签到信息。  
 查看签到信息的消息为：`小米运动#信息`  
 自动推送消息可以回复：`15`  
-![wxbot_xmyd_xx-74926bd7-f7c9-43b0-9431-ea4519ba9f46](https://pan-1256416840.cos.ap-beijing.myqcloud.com/wxbot_xmyd_xx-74926bd7-f7c9-43b0-9431-ea4519ba9f46.jpg)
+![wxbot_xmyd_xx-74926bd7-f7c9-43b0-9431-ea4519ba9f46](/img/post/wxbot_xmyd_xx-74926bd7-f7c9-43b0-9431-ea4519ba9f46.jpg)
 如果不想每天发送消息签到可以这样设置，  
 每天自动签到：`小米运动#开`  
 想关闭自动签到也很容易，  
@@ -73,4 +73,4 @@ description:  "本文章介绍一些关于在公众号使用小米运动的方�
 点击`左上角`再点击`关于我`就会出现公众号二维码。
 
 ## 微信公众号
-![微信公众号](https://pan-1256416840.cos.ap-beijing.myqcloud.com/qrcode_WeChatPublic.jpg)
+![微信公众号](/img/post/qrcode_WeChatPublic.jpg)

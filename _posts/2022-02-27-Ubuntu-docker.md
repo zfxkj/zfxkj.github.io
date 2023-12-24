@@ -6,7 +6,7 @@ category : [ubuntu,docker]
 tags : [ubuntu,docker]
 date:    2022-02-27
 author:   "晨曦"
-header-img: "https://pan-1256416840.cos.ap-beijing.myqcloud.com/ubuntu_docker-827dd4bd-7994-4d7e-8348-f731e1569d0e.png"
+header-img: "/img/post/ubuntu_docker-827dd4bd-7994-4d7e-8348-f731e1569d0e.png"
 description:  "让你几分钟学会使用docker。"
 ---
 

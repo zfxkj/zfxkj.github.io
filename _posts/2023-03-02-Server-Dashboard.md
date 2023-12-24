@@ -6,7 +6,7 @@ category : [ubuntu,debian,windows]
 tags : [ubuntu,debian,windows]
 date:    2023-03-02
 author:   "小张"
-header-img: "https://pan-1256416840.cos.ap-beijing.myqcloud.com/xiu.png"
+header-img: "/img/post/xiu.png"
 description:  "ubuntu系统应该也是支持的"
 ---
 
@@ -24,7 +24,7 @@ description:  "ubuntu系统应该也是支持的"
 在windows系统中使用，python3不能直接获取cpu温度，需要借助其他辅助工具，为了程序的简洁就没有进行修复，而是直接将温度显示为0  
 
 ## 前端展示
-![展示](https://pan-1256416840.cos.ap-beijing.myqcloud.com/sl.png)
+![展示](/img/post/sl.png)
 
 ## 项目地址
 [https://github.com/zfxkj/Server-Dashboard](https://github.com/zfxkj/Server-Dashboard)

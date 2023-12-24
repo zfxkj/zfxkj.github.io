@@ -6,7 +6,7 @@ category : [ubuntu,MYSQL]
 tags : [ubuntu,MYSQL]
 date:       2022-02-14
 author:     "小张"
-header-img: "https://pan-1256416840.cos.ap-beijing.myqcloud.com/ubuntu-mysql-21bd3b37-e460-40c7-ab57-3591309e6efc.png"
+header-img: "/img/post/ubuntu-mysql-21bd3b37-e460-40c7-ab57-3591309e6efc.png"
 description:  "本文还含有一些MYSQL的使用方法。"
 ---
 
@@ -24,7 +24,7 @@ sudo apt-get update
 #命令2 安装mysql服务
 sudo apt-get install mysql-server
 ```
-![mysql1-e3b58545-958a-47dc-b0fa-41f4b89115b1](https://pan-1256416840.cos.ap-beijing.myqcloud.com/mysql1-e3b58545-958a-47dc-b0fa-41f4b89115b1.png)
+![mysql1-e3b58545-958a-47dc-b0fa-41f4b89115b1](/img/post/mysql1-e3b58545-958a-47dc-b0fa-41f4b89115b1.png)
 
 ## 初始化配置
 ``` txt
@@ -69,7 +69,7 @@ Reload privilege tables now? (Press y|Y for Yes, any other key for No) : Y (选�
 systemctl status mysql 或 service mysql status
 ```
 如果看到有一个绿色的点和几个绿色的单词就代表运行成功。就像这样的↓
-![mysql2-a3ecbcca-7e39-42d9-9f3e-e02449673839](https://pan-1256416840.cos.ap-beijing.myqcloud.com/mysql2-a3ecbcca-7e39-42d9-9f3e-e02449673839.png)
+![mysql2-a3ecbcca-7e39-42d9-9f3e-e02449673839](/img/post/mysql2-a3ecbcca-7e39-42d9-9f3e-e02449673839.png)
 
 ## 远程访问
 在Ubuntu下MySQL是只允许本地访问的，使用workbench连接工具是连不上的，如果你要其他机器也能够访问的话，需要进行配置。
