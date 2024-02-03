@@ -73,6 +73,10 @@ friends: [
   },
   {
     title: "it-tools",
-    herf: "https://it-tools.tech/"
+    href: "https://it-tools.tech/"
+  },
+  {
+    title: "晨曦的博客",
+    href: "https://blog.whuzfb.cn/"
   }
 ]

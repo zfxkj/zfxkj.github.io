@@ -160,5 +160,31 @@ cat ~/.ssh/id_rsa.pub
 
   等待完成后，再进入网页查看就已经更新了
 
+## 恢复被强制推送push失踪的代码
+在常规的开发流程中，难免有时因为各种原因（例如需要使用git rebase）会需要使用到git push -f，也就是强制推送，该命令会覆盖远程分支。  
+但如果操作不当，会容易把小伙伴的之前提交的commit给覆盖掉，不要慌，这并不代表你小伙伴的commit已经永远找不回来了，大部分情况下，他们还是可以被找回的。  
+```text
+git reflog 可以查看所有分支的所有操作记录（包括（包括commit和reset的操作），包括已经被删除的commit记录，git log则不能查看已经删除了的commit记录
+```
+虽然有reflog这跟救命稻草，但由于Git会定时gc（回收），清理掉reflog，所以被人覆盖后不要等待太久才进行恢复操作，不然可能就真的找不回了。  
+### 操作方法
+1.备份当前工作区的数据  
+你可以使用git stash等命令备份下现在正在写的代码  
+
+2.在命令行输入git reflog/git log -g  
+显示所有历史操作，找到你需要的提交（包括已经被删除的commit记录，git log则不能察看已经删除了的commit记录）  
+![git reflog](/img/post/git_force.png)
+2.1 强制回退到当时被删除的commit  
+`git reset --hard <SHA1>`  
+2.2 或者直接  
+`git cherry-pick <SHA1>`  
+直接把当时版本的工作拿回来。不过如果有冲突的话还要处理冲突。  
+3.强推上远程分支  
+`git push -f origin <branch>`  
+如果引起commit丢失的原因并没有记录在reflog 中，比如运行了rm -Rf .git/logs/, 因为 reflog 数据是保存在 .git/logs/ 目录下的，这样就没有 reflog 了。  
+可以使用 git fsck 工具，该工具会检查仓库的数据完整性。如果指定 --full 选项，该命令显示所有未被其他对象引用 (指向) 的所有对象：  
+![git fsck](/img/post/git_fsck.png)
+然后，用相同的方法就可以恢复它，即创建一个指向该 SHA 的分支。  
+
 ### 转载说明
 本文章转载自[晨曦的博客](https://blog.whuzfb.cn)，非原创！！！
