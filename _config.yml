@@ -42,7 +42,7 @@ BASE_PATH:
 qq: 2675699284
 gitee_username: zfx521
 zhihu_username: zfxkj
-weibo_username:     
+weibo_username: 
 facebook_username:
 github_username: zfxkj
 email: 2675699284@qq.com
@@ -51,7 +51,10 @@ linkedin:
 #  default.html footer
 anchorjs: true
 
-# page Sidebar settings
+# 每日一言
+everyday-yan: true
+
+# 头像url和座右铭 
 sidebar-about-description: "ZFX 学习笔记"
 sidebar-avatar: https://avatars.githubusercontent.com/u/31238863
 
