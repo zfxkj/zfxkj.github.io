@@ -46,22 +46,6 @@ layout: default
                         {% if site.sidebar-avatar %}
                             <img src="{{site.sidebar-avatar}}" />
                         {% endif %}
-                        {% if site.everyday-yan == true %}
-                            <p id="hitokoto">每日一言获取中...
-                            </p>
-                            <script>
-                                fetch('https://v1.hitokoto.cn')
-                                  .then(response => response.json())
-                                  .then(data => {
-                                    const hitokoto = document.getElementById('hitokoto')
-                                    hitokoto.innerText = data.hitokoto
-                                  })
-                                  .catch(console.error)
-                              </script>
-                        {% else %}
-                            {% if site.sidebar-about-description %}
-                                <p>{{site.sidebar-about-description}}</p>
-                            {% endif %}
                         {% if site.everyday-yan %}
                             <p id="hitokoto">每日一言获取中...
                             </p>
@@ -69,7 +53,7 @@ layout: default
                                 fetch('https://v1.hitokoto.cn')
                                   .then(response => response.json())
                                   .then(data => {
-                                    const hitokoto = document.querySelector('hitokoto')
+                                    const hitokoto = document.getElementById('hitokoto')
                                     hitokoto.innerText = data.hitokoto
                                   })
                                   .catch(console.error)
