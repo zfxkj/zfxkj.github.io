@@ -14,9 +14,10 @@ subtitle:   "这个是副标题哦"
 categories : [Git]  
 tags : [Git]  
 date:       2017-05-11 08:15:26 +08:00  
-author:     "晨曦"  
+author:     "校长"  
 header-img: "/img/post/firstblog-bg.jpg"  
 description: 第一篇博客，一些感慨。  
+font-color: "#FF1493"
 ---  
 ```
   
@@ -24,10 +25,10 @@ description: 第一篇博客，一些感慨。
 `layout: post`  固定不变  
 `tags : [dplyr,DataBase,RSQLite]`  多个标签要用`,`隔开  
 `categories : [Git]` 或者 `category : R` 都可以表示目录分类  
-`author:    "晨曦 & ZFB"`  表示多名作者  
+`author:    "晨曦 & 校长"`  表示多名作者  
 `header-img: "/img/post/dplyr1-bg.jpg"` (引用本地`jpg`文件)或 `header-img: "https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png"` (引用外部文件，`https`站点的资源文件一律用`https`)     
 `mathjax: true`  加在头文件中，实现数学公式渲染  
-  
+`font-color: #FF1493`  这个颜色会修改页面的title、subtitle、author等颜色（即背景图上的文字颜色）。
 ```
 ## 目录  
 {: .no_toc}  

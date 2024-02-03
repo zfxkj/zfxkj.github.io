@@ -61,15 +61,15 @@ bah: "豫ICP备2021032942号"
 # 友链
 friends: [
   {
-    title: "GitHub下载加速",
-    href: "https://ghapi.zfb132.workers.dev/"
+    title: "GitHub 加速",
+    href: "https://ghps.cc/"
   },
   {
     title: "ZFX工具",
     href: "https://zfx521.gitee.io/"
   },
   {
-    title: "常用API",
-    href: "http://lkaa.top/"
+    title: "it-tools",
+    herf: "https://it-tools.tech/"
   }
 ]
