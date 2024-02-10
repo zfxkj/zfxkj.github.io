@@ -598,8 +598,9 @@ pre code {
 footer {
   font-size: 20px;
   padding: 0px 0 5px;
-  background: linear-gradient(125deg, #2c3e50, #27ae60, #2980b9, #e74c3c, #8e44ad);
-  background-size: 400%;
+  /* 渐变色背景 */
+  /* background: linear-gradient(125deg, #2c3e50, #27ae60, #2980b9, #e74c3c, #8e44ad);  */
+  /* background-size: 100%; */
   animation: bganimation 10s linear infinite
 }
 

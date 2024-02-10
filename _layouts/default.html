@@ -1,34 +1,64 @@
 <!DOCTYPE html>
+<!-- 文章底部 -->
 <html lang="zh-CN">
-<head>
-	<meta charset="utf-8">
-	<title>{{ page.title }} | {{ site.SEOTitle }}</title>
-	{% if page.description %}
-	<meta name="description" content="{{ page.description }}">
-	{% endif %}
-	<meta name="author" content="{{ site.author }}">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<!-- Enable responsive viewport -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="学习笔记, 博客, Python, zfx, zfxkj, ubuntu, debian, docker, nginx, frp, Android, Web">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ page.title }} | {{ site.SEOTitle }}</title>
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}" />
+    {% endif %}
+    <meta name="author" content="{{ site.author }}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="学习笔记, 博客, Python, zfx, zfxkj, ubuntu, debian, docker, nginx, frp, Android, Web"
+    />
 
-	<!-- 国产高速渲染 -->
-	<meta name="renderer" content="webkit">
-	<link rel="shortcut icon" href="{{ site.icon}}">
-	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.BASE_PATH }}">
-	<link rel="alternate" type="application/rss+xml" title="{{ site.SEOTitle }}" href="{{ site.BASE_PATH }}/feed.xml">
-	<!-- Le styles -->
-	<link href="//cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	<!-- <link href="//cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
-  <!-- start图标 -->
-  <link href="{{ site.BASE_PATH }}/assets/css/fontawesome/css/fontawesome.css" rel="stylesheet">
-  <link href="{{ site.BASE_PATH }}/assets/css/fontawesome/css/brands.css" rel="stylesheet">
-  <link href="{{ site.BASE_PATH }}/assets/css/fontawesome/css/solid.css" rel="stylesheet">
-  <!-- over图标 -->
-	<link href="{{ site.BASE_PATH }}/assets/resources/syntax/syntax.css" rel="stylesheet">
-	<link href="{{ site.BASE_PATH }}/assets/css/style.css" rel="stylesheet">
-	<script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<!-- Global site tag (gtag.js) - Google Analytics 
+    <!-- 国产高速渲染 -->
+    <meta name="renderer" content="webkit" />
+    <link rel="shortcut icon" href="{{ site.icon}}" />
+    <link
+      rel="canonical"
+      href="{{ page.url | replace:'index.html','' | prepend: site.BASE_PATH }}"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="{{ site.SEOTitle }}"
+      href="{{ site.BASE_PATH }}/feed.xml"
+    />
+    <!-- Le styles -->
+    <link
+      href="//cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- <link href="//cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <!-- start图标 -->
+    <link
+      href="{{ site.BASE_PATH }}/assets/css/fontawesome/css/fontawesome.css"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ site.BASE_PATH }}/assets/css/fontawesome/css/brands.css"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ site.BASE_PATH }}/assets/css/fontawesome/css/solid.css"
+      rel="stylesheet"
+    />
+    <!-- over图标 -->
+    <link
+      href="{{ site.BASE_PATH }}/assets/resources/syntax/syntax.css"
+      rel="stylesheet"
+    />
+    <link href="{{ site.BASE_PATH }}/assets/css/style.css" rel="stylesheet" />
+    <script
+      type="text/javascript"
+      src="//cdn.bootcdn.net/ajax/libs/jquery/3.1.1/jquery.min.js"
+    ></script>
+    <!-- Global site tag (gtag.js) - Google Analytics 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GER6JGHQSF"></script> 
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -37,181 +67,209 @@
 
   gtag('config', 'G-GER6JGHQSF');
 </script> -->
-<!-- Cloudflare Web Analytics 
+    <!-- Cloudflare Web Analytics 
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4731b4f01bbf4c67898d64a4c48c3cea"}'></script>
 End Cloudflare Web Analytics -->
-<!-- music↓-->
-<!-- <link rel="stylesheet" href="https://zfx521.gitee.io/css/player.css"> -->
-</head>
+    <!-- music↓-->
+    <!-- <link rel="stylesheet" href="https://zfx521.gitee.io/css/player.css"> -->
+  </head>
 
-<body ontouchstart="">
-<!-- 文章进度条 -->
-<div class="progress-indicator" style="width: 0%;"></div>
-	{% include nav.html %}
+  <body ontouchstart="">
+    <!-- 文章进度条 -->
+    <div class="progress-indicator" style="width: 0%"></div>
+    {% include nav.html %} {{ content }}
 
-	{{ content }}
-
-<!-- Footer -->
-<footer>
-    <div class="container">
+    <!-- Footer -->
+    <footer>
+      <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-				<style>p.copyright.text-muted {color: #bfbfbf;font-size: 20px;} </style>
-				<p class="copyright text-muted">
-          <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
-          </script>
-    <script>  
-      //这里代码多了几行，但是不会延迟显示，速度比较好，格式可以自定义，是理想的时间显示
-      //实时时间的显示<span id="show_time"></span>
-      setInterval("fun(show_time)",100);
-      function fun(timeID){ 
-      var date = new Date();  //创建对象  
-      var y = date.getFullYear();     //获取年份  
-      var m =date.getMonth()+1;   //获取月份  返回0-11  
-      var d = date.getDate(); // 获取日  
-      var w = date.getDay();   //获取星期几  返回0-6   (0=星期天) 
-      var ww = ' 星期'+'日一二三四五六'.charAt(new Date().getDay()) ;//星期几
-      var h = date.getHours();  //时
-      var minute = date.getMinutes()  //分
-      var s = date.getSeconds(); //秒
-      if(m<10){
-      m = "0"+m;
-      }
-      if(d<10){
-      d = "0"+d;
-      }
-      if(h<10){
-      h = "0"+h;
-      }
-      if(minute<10){
-      minute = "0"+minute;
-      }
-      if(s<10){
-      s = "0"+s;
-      }
-      document.getElementById(timeID.id).innerHTML =  y+"-"+m+"-"+d+"   "+h+":"+minute+":"+s+"  "+ww;
-      //document.write(y+"-"+m+"-"+d+"   "+h+":"+minute+":"+s);  
-        }
-        setInterval("yeara(show_year)",100);
-        function yeara(timeyear){ 
-          var d1ate = new Date();  //创建对象  
-          var year = d1ate.getFullYear();     //获取年份  
-          document.getElementById(timeyear.id).innerHTML =  "@2021-"+year;
-        }
-        setInterval("timeing(show_yxts)",100);
-        function timeing(show_yxts){ 
-          // 初始时间，月/日/年 时:分:秒
-          BirthDay=new Date("10-13-2021 08:24:10");//建站日期
-          today=new Date();
-          timeold=(today.getTime()-BirthDay.getTime());
-          sectimeold=timeold/1000
-          secondsold=Math.floor(sectimeold);
-          msPerDay=24*60*60*1000
-          e_daysold=timeold/msPerDay
-          daysold=Math.floor(e_daysold);
-          e_hrsold=(daysold-e_daysold)*-24;
-          hrsold=Math.floor(e_hrsold);
-          e_minsold=(hrsold-e_hrsold)*-60;
-          minsold=Math.floor((hrsold-e_hrsold)*-60);
-          seconds=Math.floor((minsold-e_minsold)*-60);
-          //信息写入到DIV中 
-          document.getElementById(show_yxts.id).innerHTML="本站已运行: "+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒" ;
-        }
-      </script>
-		<span id="show_year"></span> | 访问量：<span id="busuanzi_container_site_pv"><span id="busuanzi_value_site_pv"></span></span> <br> <span id="show_yxts"></span> <br> 今天：<span id="show_time"></span> <br> <a href="https://beian.miit.gov.cn/" style="color: #bfbfbf" target="_blank"> 备案号：{{ site.bah }} </a>
-                </p>
-            </div>
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <style>
+              p.copyright.text-muted {
+                color: #bfbfbf;
+                font-size: 20px;
+              }
+            </style>
+            <p class="copyright text-muted">
+              <script
+                async
+                src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+              ></script>
+              <script>
+                // 实时时间显示
+                setInterval(function() {
+                  const date = new Date();
+                  const y = date.getFullYear();
+                  const m = date.getMonth() + 1;
+                  const d = date.getDate();
+                  const w = date.getDay();
+                  const ww = "星期" + "日一二三四五六".charAt(new Date().getDay());
+                  const h = date.getHours();
+                  const minute = date.getMinutes();
+                  const s = date.getSeconds();
+            
+                  const timeStr = `${y}-${m}-${d} ${h}:${minute}:${s} ${ww}`;
+                  document.getElementById("show_time").innerHTML = timeStr;
+                }, 100);
+            
+                // 年份显示
+                setInterval(function() {
+                  const date = new Date();
+                  const year = date.getFullYear();
+                  document.getElementById("show_year").innerHTML = `@2021-${year}`;
+                }, 100);
+            
+                // 站点运行时间显示
+                setInterval(function() {
+                  const BirthDay = new Date("10-13-2021 08:24:10");
+                  const today = new Date();
+                  const timeold = today.getTime() - BirthDay.getTime();
+                  const sectimeold = timeold / 1000;
+                  const secondsold = Math.floor(sectimeold);
+                  const msPerDay = 24 * 60 * 60 * 1000;
+                  const e_daysold = timeold / msPerDay;
+                  const daysold = Math.floor(e_daysold);
+                  const e_hrsold = (daysold - e_daysold) * -24;
+                  const hrsold = Math.floor(e_hrsold);
+                  const e_minsold = (hrsold - e_hrsold) * -60;
+                  const minsold = Math.floor((hrsold - e_hrsold) * -60);
+                  const seconds = Math.floor((minsold - e_minsold) * -60);
+            
+                  const yxtsStr = `本站已运行: ${daysold}天${hrsold}小时${minsold}分${seconds}秒`;
+                  document.getElementById("show_yxts").innerHTML = yxtsStr;
+                }, 100);
+              </script>
+              <span id="show_year"></span> | 访问量：<span
+                id="busuanzi_container_site_pv"
+                ><span id="busuanzi_value_site_pv"></span
+              ></span>
+              <br />
+              <span id="show_yxts"></span> <br />
+              今天：<span id="show_time"></span> <br />
+              <a
+                href="https://beian.miit.gov.cn/"
+                style="color: #bfbfbf"
+                target="_blank"
+              >
+                备案号：{{ site.bah }}
+              </a>
+            </p>
+          </div>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/js/blog.js"></script>
-<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/js/jquery-tagcloud.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{{ site.BASE_PATH }}/assets/js/blog.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{{ site.BASE_PATH }}/assets/js/jquery-tagcloud.js"
+    ></script>
 
-<!-- 文章进度条：在style.css里面更改进度条样式 -->
-<script>
-    /* 顶部进度条 */
-    (function() {
-      var $w = $(window);
-      var $prog2 = $('.progress-indicator');
-      var wh = $w.height();
-      var h = $('body').height();
-      var sHeight = h - wh;
-      $w.on('scroll', function() {
-        window.requestAnimationFrame(function(){
-          var perc = Math.max(0, Math.min(1, $w.scrollTop() / sHeight));
-          updateProgress(perc);
+    <!-- 文章进度条：在style.css里面更改进度条样式 -->
+    <script>
+      /* 顶部进度条 */
+      (function () {
+        var $w = $(window);
+        var $prog2 = $(".progress-indicator");
+        var wh = $w.height();
+        var h = $("body").height();
+        var sHeight = h - wh;
+        $w.on("scroll", function () {
+          window.requestAnimationFrame(function () {
+            var perc = Math.max(0, Math.min(1, $w.scrollTop() / sHeight));
+            updateProgress(perc);
+          });
         });
-      });
 
-      function updateProgress(perc) {
-        $prog2.css({width: perc * 100 + '%'});
-      }
-    }());
-</script>
-<!-- async load function -->
-<script>
-    function async(u, c) {
-      var d = document, t = 'script',
+        function updateProgress(perc) {
+          $prog2.css({ width: perc * 100 + "%" });
+        }
+      })();
+    </script>
+    <!-- async load function -->
+    <script>
+      function async(u, c) {
+        var d = document,
+          t = "script",
           o = d.createElement(t),
           s = d.getElementsByTagName(t)[0];
-      o.src = u;
-      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-      s.parentNode.insertBefore(o, s);
-    }
-</script>
+        o.src = u;
+        if (c) {
+          o.addEventListener(
+            "load",
+            function (e) {
+              c(null, e);
+            },
+            false
+          );
+        }
+        s.parentNode.insertBefore(o, s);
+      }
+    </script>
 
-<!--fastClick.js -->
-<script>
-    async("//cdn.bootcdn.net/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
-    FastClick.attach(document.body);
-    })
-</script>
+    <!--fastClick.js -->
+    <script>
+      async(
+        "//cdn.bootcdn.net/ajax/libs/fastclick/1.0.6/fastclick.min.js",
+        function () {
+          FastClick.attach(document.body);
+        }
+      );
+    </script>
 
-<!--page views
+    <!--page views
 <script src="https://cdn1.lncld.net/static/js/av-mini-0.6.10.js"></script>
 <script type="text/javascript" src="{{ site.BASE_PATH }}/assets/js/hit-counter.js"></script>
 -->
-<!-- back-to-top -->
-<div id="back-top">
-  <a href="#section" data-toggle="tooltip" data-placement="top" title="top">
-  <i class="fa-solid fa-arrow-up"></i>
-  </a>
-</div>
-<!-- <script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/jquery/jquery-1.8.3.js"></script> -->
-<script>
-	$('#back-top').hide();
-	$(document).ready(function () {
-	$(window).scroll(function () {
-    if ($(this).scrollTop() > 250) {
-      $('#back-top').fadeIn();
-    } else {
-      $('#back-top').fadeOut();
-    }
-  });
-  $('#back-top a').click(function () {
-    $('body,html').animate({
-      scrollTop: 0
-    }, 800);
-    return false;
-  });
-});
-</script>
-<!-- jquery.tagcloud.js -->
-<script>
-    // only load tagcloud.js in tag.html
-    if($('#tag_cloud').length !== 0){
-        async('/assets/js/jquery-tagcloud.js',function(){
-            $.fn.tagcloud.defaults = {
-                //size: {start: 1, end: 1, unit: 'em'},
-                color: {start: '#bbbbee', end: '#0085a1'},
-            };
-            $('#tag_cloud a').tagcloud();
-        })
-    }
-</script>
-<!-- 百度自动推送链接 
+    <!-- back-to-top -->
+    <div id="back-top">
+      <a href="#section" data-toggle="tooltip" data-placement="top" title="top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+    <!-- <script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/jquery/jquery-1.8.3.js"></script> -->
+    <script>
+      $("#back-top").hide();
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 250) {
+            $("#back-top").fadeIn();
+          } else {
+            $("#back-top").fadeOut();
+          }
+        });
+        $("#back-top a").click(function () {
+          $("body,html").animate(
+            {
+              scrollTop: 0,
+            },
+            800
+          );
+          return false;
+        });
+      });
+    </script>
+    <!-- jquery.tagcloud.js -->
+    <script>
+      // only load tagcloud.js in tag.html
+      if ($("#tag_cloud").length !== 0) {
+        async("/assets/js/jquery-tagcloud.js", function () {
+          $.fn.tagcloud.defaults = {
+            //size: {start: 1, end: 1, unit: 'em'},
+            color: { start: "#bbbbee", end: "#0085a1" },
+          };
+          $("#tag_cloud a").tagcloud();
+        });
+      }
+    </script>
+    <!-- 百度自动推送链接 
 <script>
 (function(){
     var bp = document.createElement('script');
@@ -226,6 +284,5 @@ End Cloudflare Web Analytics -->
     s.parentNode.insertBefore(bp, s);
 })();
 </script>-->
-
-</body>
+  </body>
 </html>
