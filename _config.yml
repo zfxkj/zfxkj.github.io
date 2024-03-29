@@ -52,7 +52,7 @@ linkedin:
 anchorjs: true
 
 # 每日一言
-开启后座右铭将不显示
+# 开启后座右铭将不显示
 everyday-yan: true
 
 # 头像url和座右铭 
