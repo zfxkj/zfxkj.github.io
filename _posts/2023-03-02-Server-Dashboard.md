@@ -8,6 +8,7 @@ date:    2023-03-02
 author:   "小张"
 header-img: "https://tc.zfxkj.top/picgo/xiu.png"
 description:  "ubuntu系统应该也是支持的"
+font-color: "#11151a"
 ---
 
 # 目录
