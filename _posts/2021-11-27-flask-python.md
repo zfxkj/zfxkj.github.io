@@ -6,7 +6,7 @@ category : [Python]
 tags : [Python,flask]
 date:       2021-11-27
 author:     "小张"
-header-img: "/img/post/python-b225f926-8351-4a8c-96a3-3478f1f0bd00.jpg"
+header-img: "https://tc.zfxkj.top/picgo/python-b225f926-8351-4a8c-96a3-3478f1f0bd00.jpg"
 description:  "用flask框架搭建一个简单的网页。"
 ---
 

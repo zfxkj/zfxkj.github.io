@@ -6,7 +6,7 @@ category : [ubuntu,ddns]
 tags : [ubuntu]
 date:    2022-02-27
 author:   "小张"
-header-img: "/img/post/ubuntu_ddns-23dbdb3d-e57a-4078-893d-fc54f5d9a3f5.png"
+header-img: "https://tc.zfxkj.top/picgo/ubuntu_ddns-23dbdb3d-e57a-4078-893d-fc54f5d9a3f5.png"
 description:  "腾讯云域名官方文档实现ddns脚本。"
 ---
 
@@ -25,12 +25,12 @@ DDNS是动态域名服务（Dynamic Domain Name Server）的缩写，可以实�
 
 首先你要有一个腾讯云的域名，进入腾讯云的DNSPOD然后点击右上角头像选择`api秘钥`进入后点击`腾讯云api秘钥`在点击`新建秘钥`
 
-![ddns_1-eeedf547-6744-4c10-9f4b-27da2681dae8](/img/post/ddns_1-eeedf547-6744-4c10-9f4b-27da2681dae8.png)
+![ddns_1-eeedf547-6744-4c10-9f4b-27da2681dae8](https://tc.zfxkj.top/picgo/ddns_1-eeedf547-6744-4c10-9f4b-27da2681dae8.png)
 
 
 新建完成后会有2个参数，一个是`SecretId`另一个是`SecretKey`，我们吧这两个参数记下来。
 
-![ddns_2-f6fe0a49-62fd-47ab-bab4-17a3ff6e5ca8](/img/post/ddns_2-f6fe0a49-62fd-47ab-bab4-17a3ff6e5ca8.png)
+![ddns_2-f6fe0a49-62fd-47ab-bab4-17a3ff6e5ca8](https://tc.zfxkj.top/picgo/ddns_2-f6fe0a49-62fd-47ab-bab4-17a3ff6e5ca8.png)
 
 
 然后去域名解析那里解析一个域名，如果用ipv6的地址就设置解析记录类型为`AAAA`，先随便填写一个记录值（简单点的记录值，fe80::ac34）,ipv4同理

@@ -6,7 +6,7 @@ category : [Git]
 tags : [Git,GitHub,Gitee]
 date:       2021-11-13
 author:     "晨曦"
-header-img: "/img/post/git-bg-6d7a5b65-872e-4846-b0dd-9e9e05fd7556.jpg"
+header-img: "https://tc.zfxkj.top/picgo/imgpostgit-bg-6d7a5b65-872e-4846-b0dd-9e9e05fd7556.jpg.jpg"
 description:  "本文主要介绍一些简单的命令：包括clone, add, commit, push, pull, branch等"
 ---
   
@@ -173,7 +173,7 @@ git reflog 可以查看所有分支的所有操作记录（包括（包括commit
 
 2.在命令行输入git reflog/git log -g  
 显示所有历史操作，找到你需要的提交（包括已经被删除的commit记录，git log则不能察看已经删除了的commit记录）  
-![git reflog](/img/post/git_force.png)
+![git_force](https://tc.zfxkj.top/picgo/git_force.png)  
 2.1 强制回退到当时被删除的commit  
 `git reset --hard <SHA1>`  
 2.2 或者直接  
@@ -183,7 +183,7 @@ git reflog 可以查看所有分支的所有操作记录（包括（包括commit
 `git push -f origin <branch>`  
 如果引起commit丢失的原因并没有记录在reflog 中，比如运行了rm -Rf .git/logs/, 因为 reflog 数据是保存在 .git/logs/ 目录下的，这样就没有 reflog 了。  
 可以使用 git fsck 工具，该工具会检查仓库的数据完整性。如果指定 --full 选项，该命令显示所有未被其他对象引用 (指向) 的所有对象：  
-![git fsck](/img/post/git_fsck.png)
+![git_fsck](https://tc.zfxkj.top/picgo/git_fsck.png)  
 然后，用相同的方法就可以恢复它，即创建一个指向该 SHA 的分支。  
 
 ### 转载说明

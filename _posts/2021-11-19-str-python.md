@@ -6,7 +6,7 @@ category : [Python]
 tags : [Python,字符串]
 date:       2021-11-19
 author:     "小张"
-header-img: "/img/post/python-b225f926-8351-4a8c-96a3-3478f1f0bd00.jpg"
+header-img: "https://tc.zfxkj.top/picgo/python-b225f926-8351-4a8c-96a3-3478f1f0bd00.jpg"
 description:  "由于多数关于字符串的使用无法全部记住所以写进博客！！！"
 ---
 
