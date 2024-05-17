@@ -2,8 +2,8 @@
 layout: post
 title: ubuntu ddns 使用
 subtitle: "ddns 支持ipv4和ipv6 python脚本"
-category : [ubuntu,ddns]
-tags : [ubuntu]
+category : [ubuntu,ddns,linux]
+tags : [ubuntu,linux,ddns]
 date:    2022-02-27
 author:   "小张"
 header-img: "https://tc.zfxkj.top/picgo/ubuntu_ddns-23dbdb3d-e57a-4078-893d-fc54f5d9a3f5.png"

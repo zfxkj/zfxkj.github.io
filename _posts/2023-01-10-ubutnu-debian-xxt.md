@@ -2,8 +2,8 @@
 layout: post
 title: ubuntu/debian 新系统配置
 subtitle: "新系统安装zsh,git,vim,curl等"
-category : [ubuntu,debian]
-tags : [ubuntu,debian]
+category : [ubuntu,debian,linux]
+tags : [ubuntu,debian,linux]
 date:    2023-01-10
 author:   "小张"
 header-img: "https://tc.zfxkj.top/picgo/debian-vs-ubuntu.jpg"

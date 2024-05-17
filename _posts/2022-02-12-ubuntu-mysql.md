@@ -2,8 +2,8 @@
 layout: post
 title: ubuntu 20.04 安装MYSQL
 subtitle: "MYSQL的安装"
-category : [ubuntu,MYSQL]
-tags : [ubuntu,MYSQL]
+category : [ubuntu,MYSQL,linux]
+tags : [ubuntu,MYSQL,linux]
 date:       2022-02-14
 author:     "小张"
 header-img: "https://tc.zfxkj.top/picgo/ubuntu-mysql-21bd3b37-e460-40c7-ab57-3591309e6efc.png"

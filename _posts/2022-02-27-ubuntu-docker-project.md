@@ -2,8 +2,8 @@
 layout: post
 title: ubuntu docker项目
 subtitle: "4个docker必备项目。"
-category : [ubuntu,docker]
-tags : [ubuntu,docker]
+category : [ubuntu,docker,linux]
+tags : [ubuntu,docker,linux]
 date:    2022-02-27
 author:   "小张"
 header-img: "https://tc.zfxkj.top/picgo/ubuntu_docker-827dd4bd-7994-4d7e-8348-f731e1569d0e.png"

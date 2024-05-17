@@ -2,8 +2,8 @@
 layout: post
 title: ubuntu 安装zsh和配置
 subtitle: "zsh的安装"
-category : [ubuntu,zsh]
-tags : [ubuntu,zsh]
+category : [ubuntu,zsh,linux]
+tags : [ubuntu,zsh,linux]
 date:       2022-02-15
 author:     "小张"
 header-img: "https://tc.zfxkj.top/picgo/ubuntu-zsh-6de98cf1-3945-4aa4-ae8f-9bbe5445340a.png"

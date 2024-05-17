@@ -2,8 +2,8 @@
 layout: post
 title: 服务器仪表盘
 subtitle: "经测试暂支持windows系统和Debian系统"
-category : [ubuntu,debian,windows]
-tags : [ubuntu,debian,windows]
+category : [ubuntu,debian,windows,linux]
+tags : [ubuntu,debian,windows,linux]
 date:    2023-03-02
 author:   "小张"
 header-img: "https://tc.zfxkj.top/picgo/xiu.png"
