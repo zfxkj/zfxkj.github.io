@@ -79,5 +79,9 @@ friends: [
   {
     title: "晨曦的博客",
     href: "https://blog.whuzfb.cn/"
+  },
+  {
+    title: "粒子特效",
+    href: "/lztx.html"
   }
 ]
