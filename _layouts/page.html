@@ -53,7 +53,7 @@ layout: default
                             <script type="text/javascript">
                                 window.onload = every_yan;
                                 function every_yan() {
-                                    fetch('https://v1.hitokoto.cn')
+                                    fetch('https://v1.hitokoto.cn',{mode:'no-cors'})
                                     .then(response => response.json())
                                     .then(data => {
                                         const hitokoto = document.getElementById('hitokoto')
