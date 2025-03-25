@@ -233,7 +233,10 @@ alias dl='export https_proxy="http://${hostip}:${hostport}";export http_proxy="h
 # # # 创建命令用于关闭代理
 alias undl='unset https_proxy;unset http_proxy;unset all_proxy;'
 ```
-
+### 常用设置
+```bash
+alias updo='docker compose pull;docker compose stop;docker compose rm -f;docker compose up -d'
+```
 # 常见问题
 
 ## 不常用命令
