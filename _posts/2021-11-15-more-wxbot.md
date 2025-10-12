@@ -6,7 +6,7 @@ category : [wxbot]
 tags : [wxbot]
 date:       2021-11-15
 author:     "小张"
-header-img: "https://tc.zfxkj.top/picgo/wxbot-more-50501dfc-2307-4726-8236-6491c73b4ec6.jpg"
+header-img: "https://www.zfxkj.top/picgo/wxbot-more-50501dfc-2307-4726-8236-6491c73b4ec6.jpg"
 description:  "本文章介绍一些关于在公众号使用其他程序的方法。。。"
 ---
 
@@ -63,12 +63,12 @@ description:  "本文章介绍一些关于在公众号使用其他程序的方�
 在公众号内发送：`绑定#邮箱#邮箱地址`  
 比如我的邮箱地址是123@qq.com,那么我的绑定信息如下  
 示例：`绑定#邮箱#123@qq.com`  
-![wxbot_more_bdyx-94f8573a-2a98-4cc1-8cbb-7815a4be057f](https://tc.zfxkj.top/picgo/wxbot_more_bdyx-94f8573a-2a98-4cc1-8cbb-7815a4be057f.jpg)  
+![wxbot_more_bdyx-94f8573a-2a98-4cc1-8cbb-7815a4be057f](https://www.zfxkj.top/picgo/wxbot_more_bdyx-94f8573a-2a98-4cc1-8cbb-7815a4be057f.jpg)  
 绑定方糖或者server酱的方式  
 在公众号内发送：`绑定#key#sendkey`  
 比如我的sendkey是SCT12333,那么我的绑定信息如下  
 示例：`绑定#key#SCT12333`  
-![wxbot_more_bdsc-fc419667-3767-49e2-af2d-32d9e4547ccb](https://tc.zfxkj.top/picgo/wxbot_more_bdsc-fc419667-3767-49e2-af2d-32d9e4547ccb.jpg)  
+![wxbot_more_bdsc-fc419667-3767-49e2-af2d-32d9e4547ccb](https://www.zfxkj.top/picgo/wxbot_more_bdsc-fc419667-3767-49e2-af2d-32d9e4547ccb.jpg)  
 如果想要解除绑定也很简单  
 示例：`绑定#key#clear`  
 示例：`绑定#邮箱#clear`  
@@ -81,4 +81,4 @@ description:  "本文章介绍一些关于在公众号使用其他程序的方�
 点击`左上角`再点击`关于我`就会出现公众号二维码。
 
 ## 微信公众号
-![微信公众号](https://tc.zfxkj.top/picgo/微信公众号.jpg)
+![微信公众号](https://www.zfxkj.top/picgo/微信公众号.jpg)

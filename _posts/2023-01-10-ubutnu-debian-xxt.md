@@ -6,7 +6,7 @@ category : [ubuntu,debian,linux]
 tags : [ubuntu,debian,linux]
 date:    2023-01-10
 author:   "小张"
-header-img: "https://tc.zfxkj.top/picgo/debian-vs-ubuntu.jpg"
+header-img: "https://www.zfxkj.top/picgo/debian-vs-ubuntu.jpg"
 description:  "新系统配置及常见问题"
 ---
 
@@ -116,7 +116,7 @@ sh -c "$(wget https://gitee.com/zfx521/ohmyzsh/raw/master/tools/install.sh -O -)
 
 在 [https://github.com/ohmyzsh/ohmyzsh/wiki/Themes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) 中查看内置的主题样式和对应的主题名。这些内置主题已经放在 `～/.oh-my-zsh/themes` 目录下，不需要再下载。
 
-![oh_my_zsh_themes](https://tc.zfxkj.top/picgo/oh_my_zsh_themes.png)
+![oh_my_zsh_themes](https://www.zfxkj.top/picgo/oh_my_zsh_themes.png)
 
 除了内置主题外，还可以选择其他开源的主题，强烈推荐尝试一下 `powerlevel10k` 主题，一个顶十个，项目地址为：[https://github.com/romkatv/powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
@@ -142,7 +142,7 @@ oh-my-zsh 已经内置了 git 插件，内置插件可以在 `～/.oh-my-zsh/plu
 
 [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) 是一个命令提示插件，当你输入命令时，会自动推测你可能需要输入的命令，按下右键可以快速采用建议。效果如下：
 
-![zsh-autosuggestions](https://tc.zfxkj.top/picgo/zsh-autosuggestions.png)
+![zsh-autosuggestions](https://www.zfxkj.top/picgo/zsh-autosuggestions.png)
 
 安装步骤：
 
@@ -167,7 +167,7 @@ oh-my-zsh 已经内置了 git 插件，内置插件可以在 `～/.oh-my-zsh/plu
 
 [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) 是一个命令语法校验插件，在输入命令的过程中，若指令不合法，则指令显示为红色，若指令合法就会显示为绿色。效果如下：
 
-![zsh-syntax-highlighting](https://tc.zfxkj.top/picgo/zsh-syntax-highlighting.png)
+![zsh-syntax-highlighting](https://www.zfxkj.top/picgo/zsh-syntax-highlighting.png)
 
 安装步骤：
 
