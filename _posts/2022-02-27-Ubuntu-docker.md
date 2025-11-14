@@ -40,21 +40,29 @@ Docker三个命令：
 
 2. 添加apt源并安装：
 
-   ```shell
-   # 添加使用 HTTPS 传输的软件包以及 CA 证书
-   sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
-   # 由于国内网络问题，使用国内源；官方地址为 https://download.docker.com/linux/ubuntu/gpg
-   curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo apt-key add -
-   # 向 source.list 中添加 Docker 软件源；官方地址为 https://download.docker.com/linux/ubuntu
-   sudo add-apt-repository \
-    "deb [arch=amd64] https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu \
-    $(lsb_release -cs) \
-    stable"
-   # 更新 apt 软件包缓存
-   sudo apt-get update
-   # 安装 docker-ce
-   sudo apt-get install docker-ce
-   ```
+```shell
+# 1. 安装必要的包
+sudo apt-get update
+sudo apt-get install ca-certificates curl gnupg
+
+# 2. 创建密钥环目录
+sudo install -m 0755 -d /etc/apt/keyrings
+
+# 3. 下载并添加 Docker 的 GPG 密钥
+curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+
+# 4. 设置权限
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+
+# 5. 添加 Docker 仓库
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+# 6. 更新包索引
+sudo apt-get update
+
+# 7. 安装 Docker
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
 
 3. 配置文件路径
 

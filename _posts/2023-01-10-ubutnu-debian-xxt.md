@@ -23,7 +23,7 @@ description:  "新系统配置及常见问题"
 备份源文件
 
 ```bash
-sudo cp /etc/apt/sources.list /etc/apt/sources.list_bak
+cp /etc/apt/sources.list /etc/apt/sources.list_bak
 ```
 
 ubuntu修改源文件为清华源`/etc/apt/sources.list`
@@ -31,8 +31,8 @@ ubuntu修改源文件为清华源`/etc/apt/sources.list`
 ubutnu 适用版本：`14.04 LTS~22.04 LTS`
 
 ```bash
-sudo sed -i "s@http://.*archive.ubuntu.com@https://mirrors.tuna.tsinghua.edu.cn@g" /etc/apt/sources.list
-sudo sed -i "s@http://.*security.ubuntu.com@https://mirrors.tuna.tsinghua.edu.cn@g" /etc/apt/sources.list
+sed -i "s@http://.*archive.ubuntu.com@https://mirrors.tuna.tsinghua.edu.cn@g" /etc/apt/sources.list
+sed -i "s@http://.*security.ubuntu.com@https://mirrors.tuna.tsinghua.edu.cn@g" /etc/apt/sources.list
 ```
 
 debian修改源文件为清华源`/etc/apt/sources.list`
@@ -40,7 +40,7 @@ debian修改源文件为清华源`/etc/apt/sources.list`
 debian 适用版本为：`11 bullseye`
 
 ```bash
-sudo apt install apt-transport-https ca-certificates
+apt install apt-transport-https ca-certificates
 ```
 ```bash
 cat > /etc/apt/sources.list << EOF
@@ -61,8 +61,8 @@ EOF
 更新源和软件
 
 ```bash
-sudo apt update
-sudo apt upgeade
+apt update
+apt upgrade -y
 ```
 
 ## 1. zsh介绍
@@ -81,7 +81,7 @@ zsh 是一个兼容 bash 的 shell，相较 bash 具有以下优点：
 ## 2. zsh安装
 
 ```bash
-sudo apt-get install zsh
+apt-get install zsh
 ```
 
 更换shell为zsh
@@ -95,7 +95,7 @@ chsh -s /bin/zsh
 首先安装wget,git和curl
 
 ```bash
-sudo apt install wget git curl -y
+apt install wget git curl -y
 ```
 
 使用 curl 下载脚本并安装：
@@ -305,7 +305,7 @@ su - username
 输入
 
 ```bash
-sudo whoami
+whoami
 ```
 
 显示root即为添加成功
