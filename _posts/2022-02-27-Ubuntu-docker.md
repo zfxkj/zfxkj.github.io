@@ -36,33 +36,33 @@ Docker三个命令：
 
 在WSL使用Docker的官网安装[教程](https://docs.docker.com/docker-for-windows/wsl/)，需要自己安装[Windows版Docker](https://hub.docker.com/editions/community/docker-ce-desktop-windows/)
 
-1. 卸载旧版本：`sudo apt-get remove docker docker-engine docker.io`
+1. 卸载旧版本：`apt-get remove docker docker-engine docker.io`
 
 2. 添加apt源并安装：
 
-```shell
-# 1. 安装必要的包
-sudo apt-get update
-sudo apt-get install ca-certificates curl gnupg
+    ```shell
+    # 1. 安装必要的包
+    apt-get update
+    apt-get install ca-certificates curl gnupg
 
-# 2. 创建密钥环目录
-sudo install -m 0755 -d /etc/apt/keyrings
+    # 2. 创建密钥环目录
+    install -m 0755 -d /etc/apt/keyrings
 
-# 3. 下载并添加 Docker 的 GPG 密钥
-curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+    # 3. 下载并添加 Docker 的 GPG 密钥
+    curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 
-# 4. 设置权限
-sudo chmod a+r /etc/apt/keyrings/docker.gpg
+    # 4. 设置权限
+    chmod a+r /etc/apt/keyrings/docker.gpg
 
-# 5. 添加 Docker 仓库
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    # 5. 添加 Docker 仓库
+    echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | tee /etc/apt/sources.list.d/docker.list > /dev/null
 
-# 6. 更新包索引
-sudo apt-get update
+    # 6. 更新包索引
+    apt-get update
 
-# 7. 安装 Docker
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-```
+    # 7. 安装 Docker
+    apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+    ```
 
 3. 配置文件路径
 
@@ -84,8 +84,8 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
    然后重新启动服务：
 
    ```shell
-   sudo systemctl daemon-reload
-   sudo systemctl restart docker
+   systemctl daemon-reload
+   systemctl restart docker
    # 测试docker是否正确安装
    docker run hello-world
    ```
@@ -94,9 +94,9 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 
    ```shell
    # 设置Docker开机自启
-   sudo systemctl enable docker
+   systemctl enable docker
    # 启动Docker
-   sudo systemctl start docker
+   systemctl start docker
    ```
 
 ## 3. docker常用命令
@@ -272,7 +272,7 @@ ONBUILD RUN /usr/local/bin/python-build --dir /app/src
 
 最不容易发生变化的操作放在较低的镜像层中，这样在重新 build 镜像时就会使用前面 build 产生的缓存
 编写完成`Dockerfile`之后，可以通过`docker build`命令来创建镜像，该命令将读取指定路径下（包括子目录）的`Dockerfile`文件，并将该路径下所有内容发送给`Docker`服务端，由服务端来创建镜像。因此一般建议放置`Dockerfile`的目录为空目录。也可以通过`.dockerignore`文件（每一行添加一条匹配模式）来让`Docker`忽略路径下的目录和文件；要指定镜像的标签信息，可以通过`-t`选项，例如：
-`sudo docker build -t myrepo/myapp:2.0 /tmp/test1/`
+`docker build -t myrepo/myapp:2.0 /tmp/test1/`
 **注意**：对于使用`Dockerfile`创建的镜像构建的容器来说，直接启动就会执行`Dockerfile`的`CMD`命令（或`ENTRYPOINT`命令），所以如果是别人制作的镜像，例如[opendronemap/odm/dockerfile](https://hub.docker.com/r/opendronemap/odm/dockerfile)，我们很可能就无法进入容器内的`/bin/bash`来执行其他操作。这时，使用如下命令启动容器就可以覆盖`Dockerfile`的`ENTRYPOINT`命令，来执行自己需要的命令：
 `docker run -it --entrypoint /bin/bash opendronemap/odm`
 
